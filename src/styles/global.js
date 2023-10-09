@@ -25,6 +25,26 @@ export default createGlobalStyle`
     button, a {
         cursor: pointer;
         transition: filter 0.2s;
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: medium;
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
+        
+    }
+
+    input { 
+        font-family: 'Roboto', sans-serif;;
+        font-size: 16px;
+        color: ${({ theme }) => theme.COLORS.LIGHT_500};
+    }
+
+    label {
+        font-family: 'Roboto', sans-serif;;
+        font-size: 16px;
+        color: ${({ theme }) => theme.COLORS.LIGHT_400};
+
     }
 
 `;

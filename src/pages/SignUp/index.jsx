@@ -1,15 +1,20 @@
+/* eslint-disable no-unused-vars */
 import { Button } from "../../components/Button"
 import { Input } from "../../components/Input"
-import { Logo } from "../../components/logo"
 import { Form } from "../../components/LoginForm"
+import { Logo } from "../../components/logo"
 import { Container } from "./styles"
-// import { Link } from "react-router-dom"
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <Logo />
       <Form>
+      <Input
+          label="Seu nome"
+          placeholder="Exemplo: Maria da Silva"
+          type="text"
+        />
         <Input
           label="Email"
           placeholder="Exemplo: exemplo@exemplo.com.br"
@@ -20,12 +25,10 @@ export function SignIn() {
           placeholder="No mínimo 6 caracteres"
           type="password"
         />
-        <Button title="Entrar"/>
+        <Button title="Criar conta" />
 
-        <a> Criar uma conta </a>
+        <a> Já tenho uma conta </a>
       </Form>
-        {/* <Link to="/">entar</Link> */}
     </Container>
   )
 }
-

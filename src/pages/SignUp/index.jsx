@@ -9,7 +9,7 @@ export function SignUp() {
   return (
     <Container>
       <Logo />
-      <Form>
+      <Form title="Crie sua conta">
       <Input
           label="Seu nome"
           placeholder="Exemplo: Maria da Silva"

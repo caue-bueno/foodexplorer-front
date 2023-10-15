@@ -9,7 +9,8 @@ export function SignIn() {
   return (
     <Container>
       <Logo />
-      <Form>
+      
+      <Form title="Faça login">
         <Input
           label="Email"
           placeholder="Exemplo: exemplo@exemplo.com.br"
@@ -20,11 +21,11 @@ export function SignIn() {
           placeholder="No mínimo 6 caracteres"
           type="password"
         />
-        <Button title="Entrar"/>
+        <Button title="Entrar" />
 
         <a> Criar uma conta </a>
       </Form>
-        {/* <Link to="/">entar</Link> */}
+      {/* <Link to="/">entar</Link> */}
     </Container>
   )
 }

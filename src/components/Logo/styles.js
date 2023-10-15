@@ -15,4 +15,8 @@ export const Container = styled.div`
     margin-right: 1.1rem;
   }
 
+  @media (min-width: 1200px) {
+  margin: 0 10.8rem 0; 
+  }
+
 `;

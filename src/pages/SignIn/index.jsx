@@ -8,6 +8,7 @@ import { Container } from "./styles"
 export function SignIn() {
   return (
     <Container>
+      <div>
       <Logo />
       
       <Form title="Faça login">
@@ -25,6 +26,8 @@ export function SignIn() {
 
         <a> Criar uma conta </a>
       </Form>
+      </div>
+      
       {/* <Link to="/">entar</Link> */}
     </Container>
   )

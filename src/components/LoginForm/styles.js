@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.form`
-  width: 47.6rem;
-  margin: 0 auto;
-  padding: 6.4rem;
+  margin: 7.3rem auto 0;
+  width: 31.6rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -16,6 +15,9 @@ export const Container = styled.form`
   }
 
   @media (min-width: 1200px) {
+  width: 47.6rem;
+  padding: 6.4rem;
+  
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
   margin: 0 10.8rem 0; 
   }

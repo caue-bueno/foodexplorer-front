@@ -2,22 +2,23 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid white; */
-  align-items: center;
-  margin-top: 15.8rem;
-  margin-bottom: 5rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
 
   @media (min-width: 1200px) {
-    width: 140rem;
-    margin: 15.8rem auto 0;
+    width: 120rem;
+    margin: 0 auto;
     flex-direction: row;
-    gap: 10rem;
+    gap: 2rem;
   }
-
-  @media (min-width: 2480px) {
-    margin-top: 25.8rem;
+  
   }
 
 `;

@@ -8,27 +8,29 @@ import { Container } from "./styles"
 export function SignUp() {
   return (
     <Container>
-      <Logo />
-      <Form title="Crie sua conta">
-      <Input
-          label="Seu nome"
-          placeholder="Exemplo: Maria da Silva"
-          type="text"
-        />
-        <Input
-          label="Email"
-          placeholder="Exemplo: exemplo@exemplo.com.br"
-          type="email"
-        />
-        <Input
-          label="Senha"
-          placeholder="No mínimo 6 caracteres"
-          type="password"
-        />
-        <Button title="Criar conta" />
+      <div>
+        <Logo />
+        <Form title="Crie sua conta">
+          <Input
+            label="Seu nome"
+            placeholder="Exemplo: Maria da Silva"
+            type="text"
+          />
+          <Input
+            label="Email"
+            placeholder="Exemplo: exemplo@exemplo.com.br"
+            type="email"
+          />
+          <Input
+            label="Senha"
+            placeholder="No mínimo 6 caracteres"
+            type="password"
+          />
+          <Button title="Criar conta" />
 
-        <a> Já tenho uma conta </a>
-      </Form>
+          <a> Já tenho uma conta </a>
+        </Form>
+      </div>
     </Container>
   )
 }

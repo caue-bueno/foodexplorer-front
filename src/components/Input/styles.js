@@ -20,8 +20,3 @@ export const Container = styled.div`
 
   }
 `;
-
-export const InputBox = styled.div`
-  
-
-`;

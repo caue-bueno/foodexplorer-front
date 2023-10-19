@@ -7,11 +7,8 @@ export function Home() {
     <Container>
       <Header />
       <Content>
-
       </Content>
       <Footer />
-
-
     </Container>
   )
 }

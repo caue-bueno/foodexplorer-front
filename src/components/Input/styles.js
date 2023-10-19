@@ -5,10 +5,13 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   margin-top: 8px;
-
   border-radius: 8px;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_900};
+
+  :focus {
+    outline-style: dashed ;
+  }
 
   > input {
       width: 100%;
@@ -18,5 +21,9 @@ export const Container = styled.div`
       border-radius: 8px;
       outline: none;
 
+  }
+
+  svg {
+    margin-left: 1.4rem;
   }
 `;

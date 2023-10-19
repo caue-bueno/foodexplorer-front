@@ -12,10 +12,10 @@ export const Container = styled.div`
     align-items: center;
     margin: 5.6rem 2.8rem 0;
   }
+`;
 
-  .icon {
-    position: relative;
-  }
+export const Cart = styled.div`
+  position: relative;
 `;
 
 export const Amount = styled.div`

@@ -12,8 +12,8 @@ export default createGlobalStyle`
     }
 
     :focus {
-        outline: transparent;
-        box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
+        /* outline: transparent; */
+        /* box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100}; */
     }
 
     body {
@@ -40,13 +40,13 @@ export default createGlobalStyle`
     }
 
     input { 
-        font-family: 'Roboto', sans-serif;;
+        font-family: 'Roboto', sans-serif;
         font-size: 16px;
         color: ${({ theme }) => theme.COLORS.LIGHT_500};
     }
 
     label {
-        font-family: 'Roboto', sans-serif;;
+        font-family: 'Roboto', sans-serif;
         font-size: 16px;
         color: ${({ theme }) => theme.COLORS.LIGHT_400};
 

@@ -10,8 +10,7 @@ export const Container = styled.div`
   align-items: center;
 
   font-family: 'Roboto', sans-serif;
-  font-size: 21px;
-
+  font-size: 2.1rem;
 
   > div {
     display: flex;

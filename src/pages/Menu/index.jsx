@@ -1,6 +1,6 @@
 import { Footer } from "../../components/Footer";
 import { MenuHeader } from "../../components/MenuHeader";
-import { Input } from "../../components/Input";
+import { SearchInput } from "../../components/SearchInput";
 import { MenuButton } from "../../components/MenuButton";
 import { Container, Content, Wrapper } from "./styles";
 import { GoSearch } from "react-icons/go";
@@ -10,7 +10,7 @@ export function Menu() {
     <Container>
       <MenuHeader />
       <Content>
-        <Input placeholder={"Busque por pratos ou ingredientes"} icon={GoSearch} />
+        <SearchInput placeholder={"Busque por pratos ou ingredientes"} icon={GoSearch} />
         <Wrapper>
           <MenuButton title={"Novo prato"} />
           <MenuButton title={"Meus favoritos"} />

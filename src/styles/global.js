@@ -32,7 +32,7 @@ export default createGlobalStyle`
         transition: filter 0.2s;
 
         font-family: 'Poppins', sans-serif;
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 24px;
         font-weight: medium;
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
@@ -41,7 +41,7 @@ export default createGlobalStyle`
 
     input { 
         font-family: 'Roboto', sans-serif;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_500};
     }
 

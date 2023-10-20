@@ -3,12 +3,12 @@ import { Container } from "./styles"
 
 export function Input({ icon: Icon, label, ...rest }) {
   return (
-    <div>
+    <Container>
       <label>{label}</label>
-      <Container>
-        {Icon && <Icon size={20} />}
+      <div>
+        {Icon && <Icon size={20} className="icon"/>}
         <input {...rest} />
-      </Container>
-    </div>
+      </div>
+    </Container>
   )
 }

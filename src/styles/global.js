@@ -12,8 +12,8 @@ export default createGlobalStyle`
     }
 
     :focus {
-        /* outline: transparent; */
-        /* box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100}; */
+        outline: transparent;
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 
     body {

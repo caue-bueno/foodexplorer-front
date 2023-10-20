@@ -11,10 +11,13 @@ export const Container = styled.div`
 
   width: 100%;
   position: absolute;
-  display: none;
+
+  transform: translateX(-100%);
+  transition: transform .4s ease-in-out;
 
   &[data-menu-is-open="true"] {
-    display: block;
+    transform: translateX(0);
+
   }
 
 `;
@@ -34,7 +37,8 @@ export const Header = styled.div`
   > div {
     display: flex;
     align-items: center;
-    margin-top: 5rem;
+    height: 4.6rem;
+    margin-top: 3.6rem;
 
   }
 `;

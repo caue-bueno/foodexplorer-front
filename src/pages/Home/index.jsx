@@ -7,16 +7,17 @@ import { useState } from "react";
 
 
 export function Home() {
-  const [menuIsOpen, setMenuIsOpen] = useState(true);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
     <Container>
-      <Header />
+      <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
       </Content>
       <Footer />
       <Menu 
         menuIsOpen={menuIsOpen}
+        onCloseMenu={() => setMenuIsOpen(false)}
       />
     </Container>
   )

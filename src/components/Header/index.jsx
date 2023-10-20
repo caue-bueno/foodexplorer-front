@@ -3,11 +3,11 @@ import Logo from "../../assets/logoHeader.svg";
 import Menu from "../../assets/icons/menu.svg";
 import Receipt from "../../assets/icons/receipt.svg";
 
-export function Header() {
+export function Header({ onOpenMenu }) {
   return (
     <Container>
       <div>
-        <Button>
+        <Button onClick={onOpenMenu}>
           <img src={Menu} />
         </Button>
         <img src={Logo} />

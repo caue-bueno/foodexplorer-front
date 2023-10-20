@@ -1,4 +1,3 @@
-// import { Footer } from "../Footer";
 import { SearchInput } from "../SearchInput";
 import { MenuButton } from "../MenuButton";
 import { Container, Header, Button, Content, Wrapper, Footer } from "./styles";
@@ -6,12 +5,12 @@ import { GoSearch } from "react-icons/go";
 import Close from "../../assets/icons/Close.svg";
 
 
-export function Menu({ menuIsOpen }) {
+export function Menu({ menuIsOpen, onCloseMenu }) {
   return (
     <Container data-menu-is-open={menuIsOpen}>
       <Header>
         <div>
-          <Button>
+          <Button onClick={onCloseMenu}>
             <img src={Close} />
           </Button>
           <p>Menu</p>

@@ -14,8 +14,17 @@ export const Container = styled.div`
   }
 `;
 
-export const Cart = styled.div`
+export const Button = styled.button`
+  border: none;
+  background: none;
+  height: 20px;
+`;
+
+export const Cart = styled.button`
   position: relative;
+  border: none;
+  background: none;
+  height: 22px;
 `;
 
 export const Amount = styled.div`

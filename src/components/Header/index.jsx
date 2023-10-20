@@ -1,4 +1,4 @@
-import { Container, Cart, Amount } from "./styles";
+import { Container, Cart, Amount, Button } from "./styles";
 import Logo from "../../assets/logoHeader.svg";
 import Menu from "../../assets/icons/menu.svg";
 import Receipt from "../../assets/icons/receipt.svg";
@@ -7,7 +7,9 @@ export function Header() {
   return (
     <Container>
       <div>
-        <img src={Menu} />
+        <Button>
+          <img src={Menu} />
+        </Button>
         <img src={Logo} />
         <Cart>
           <img src={Receipt} />

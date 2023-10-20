@@ -14,4 +14,10 @@ export const Container = styled.button`
   &:disabled {
     background-color: ${({ theme }) => theme.COLORS.TOMATO_400};
   }
+
+  &:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
+    background-color: ${({ theme }) => theme.COLORS.TOMATO_200};
+  }
 `;

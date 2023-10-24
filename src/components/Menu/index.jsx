@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { SearchInput } from "../SearchInput";
 import { MenuButton } from "../MenuButton";
 import { Container, Header, Button, Content, Wrapper, Footer } from "./styles";

@@ -12,13 +12,11 @@ export const Container = styled.div`
     /* border: 1px solid white; */
     align-items: center;
 
-  @media (min-width: 1200px) {
-    width: 120rem;
-    margin: 0 auto;
-    flex-direction: row;
-    gap: 2rem;
+    @media (min-width: 1200px) {
+      width: 120rem;
+      margin: 0 auto;
+      flex-direction: row;
+      gap: 2rem;
+    }
   }
-  
-  }
-
 `;

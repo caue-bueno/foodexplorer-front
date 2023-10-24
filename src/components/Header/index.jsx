@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Container, Cart, Amount, Button } from "./styles";
 import Logo from "../../assets/logoHeader.svg";
 import Menu from "../../assets/icons/menu.svg";

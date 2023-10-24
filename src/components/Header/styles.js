@@ -17,14 +17,14 @@ export const Container = styled.div`
 export const Button = styled.button`
   border: none;
   background: none;
-  height: 20px;
+  height: 2rem;
 `;
 
 export const Cart = styled.button`
   position: relative;
   border: none;
   background: none;
-  height: 22px;
+  height: 2.2rem;
 `;
 
 export const Amount = styled.div`

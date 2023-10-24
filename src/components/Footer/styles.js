@@ -21,6 +21,10 @@ export const Container = styled.div`
   }
 
   @media (min-width: ${BREAKPOINTS.LG}) {
+    > div {
+      margin: 0 12.3rem;
+    }
+
     span {
     font-size: 1.4rem;
   }

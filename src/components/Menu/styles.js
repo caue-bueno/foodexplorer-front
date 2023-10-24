@@ -17,7 +17,6 @@ export const Container = styled.div`
 
   &[data-menu-is-open="true"] {
     transform: translateX(0);
-
   }
 
 `;
@@ -48,7 +47,6 @@ export const Button = styled.button`
   background: none;
   height: 18px; 
   margin-right: 1.6rem;
-
 `;
 
 export const Content = styled.div`
@@ -57,7 +55,6 @@ export const Content = styled.div`
   min-height: 72.6rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_100};
   padding: 3.6rem 2.8rem 1.3rem;
-  
 `;
 
 export const Wrapper = styled.div`

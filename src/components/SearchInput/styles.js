@@ -5,9 +5,9 @@ export const Container = styled.div`
   > div {
     position:relative;
     width: 100%;
+    height: 4.8rem;
     display: flex;
     align-items: center;
-    margin-top: 8px;
     border-radius: 8px;
 
     background-color: ${({ theme }) => theme.COLORS.DARK_900};

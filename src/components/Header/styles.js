@@ -11,7 +11,7 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 5.6rem 2.8rem 0;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
   &[data-is-admin="true"] {
       > div {
@@ -25,17 +25,24 @@ export const Container = styled.div`
         margin: 2.9rem auto 0;
         justify-content: stretch;
         gap: 1.6rem;
-        border: 1px solid red;
       }
     }
 
     @media (min-width: ${BREAKPOINTS.LG}) {
       > div {
-        width: 90rem;
+        width: 88rem;
         margin: 2.9rem auto 0;
         justify-content: stretch;
         gap: 3.6rem;
-        border: 1px solid yellow;
+      }
+    }
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+      > div {
+        width: 114rem;
+        margin: 2.9rem auto 0;
+        justify-content: stretch;
+        gap: 3.6rem;
       }
     }
 `;
@@ -80,6 +87,11 @@ export const Search = styled.div`
 
   @media (min-width: ${BREAKPOINTS.MD}) {
     display: block;
+  }
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+  width: 58.1rem;
+  flex: 1;
   }
 `;
 

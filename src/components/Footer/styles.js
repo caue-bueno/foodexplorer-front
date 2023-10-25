@@ -20,7 +20,7 @@ export const Container = styled.div`
     margin-left: .5rem;
   }
 
-  @media (min-width: ${BREAKPOINTS.LG}) {
+  @media (min-width: ${BREAKPOINTS.MD}) {
     > div {
       margin: 0 12.3rem;
     }
@@ -30,8 +30,14 @@ export const Container = styled.div`
   }
 
   img {
+      width: 150px;
+    }
+  }
+
+  @media (min-width: ${BREAKPOINTS.LG}) {
+    img {
       width: 200px;
     }
-    
   }
+
 `;

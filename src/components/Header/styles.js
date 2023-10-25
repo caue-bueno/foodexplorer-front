@@ -4,7 +4,6 @@ import { BREAKPOINTS } from "../../styles/breakpoints";
 export const Container = styled.div`
   grid-area: header;
 
-  height: 14.4rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
 
   > div {
@@ -20,9 +19,23 @@ export const Container = styled.div`
       }
     }
 
+    @media (min-width: ${BREAKPOINTS.MD}) {
+      > div {
+        width: 72rem;
+        margin: 2.9rem auto 0;
+        justify-content: stretch;
+        gap: 1.6rem;
+        border: 1px solid red;
+      }
+    }
+
     @media (min-width: ${BREAKPOINTS.LG}) {
       > div {
-        margin: 2.9rem 12.3rem 0;
+        width: 90rem;
+        margin: 2.9rem auto 0;
+        justify-content: stretch;
+        gap: 3.6rem;
+        border: 1px solid yellow;
       }
     }
 `;
@@ -43,6 +56,12 @@ export const LogoWrapper = styled.div`
     margin: 0 auto;
   }
 
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    img {
+      width: 150px;
+    }
+  }
+
   @media (min-width: ${BREAKPOINTS.LG}) {
     img {
       width: 200px;
@@ -51,11 +70,15 @@ export const LogoWrapper = styled.div`
 `;
 
 export const Search = styled.div`
-  width: 58.1rem;
+  min-width: 32.1rem;
   height: 4.8rem;
   display: none;
+  
+  .centered-input {
+    text-align: center;
+  }
 
-  @media (min-width: ${BREAKPOINTS.LG}) {
+  @media (min-width: ${BREAKPOINTS.MD}) {
     display: block;
   }
 `;
@@ -65,7 +88,7 @@ export const MenuButton = styled.button`
   background: none;
   height: 2rem;
 
-  @media (min-width: ${BREAKPOINTS.LG}) {
+  @media (min-width: ${BREAKPOINTS.MD}) {
     display: none;
   }
 `;
@@ -81,11 +104,7 @@ export const Cart = styled.button`
     display: none;
   }
 
-  @media (min-width: ${BREAKPOINTS.LG}) {
-    /* background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
-    height: 5.6rem;
-    width: 21.6rem;
-    border-radius: .5rem; */
+  @media (min-width: ${BREAKPOINTS.MD}) {
     display: none;
   }
 `;
@@ -113,7 +132,12 @@ export const Amount = styled.div`
 export const OrderButton = styled.button`
   display: none;
 
-  @media (min-width: ${BREAKPOINTS.LG}) {
+  &:focus {
+        outline: transparent;
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
   
   display: flex;
   justify-content: center;
@@ -121,25 +145,23 @@ export const OrderButton = styled.button`
   gap: .8rem;
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   height: 5.6rem;
-  width: 21.6rem;
+  width: 16.6rem;
   border-radius: .5rem;
   border: none;
+  }
 
-
-  :focus {
-        outline: transparent;
-        box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
-    }
+  @media (min-width: ${BREAKPOINTS.LG}) {
+    width: 21.6rem;
   }
 `;
 
 export const SignOutButton = styled.button`
   display: none;
   
-  @media (min-width: ${BREAKPOINTS.LG}) {
+  @media (min-width: ${BREAKPOINTS.MD}) {
     display: block;
     border: none;
     background: none;
-    height: 2rem;
+    height: 3rem;
   }
 `;

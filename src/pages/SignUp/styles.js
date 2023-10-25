@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
   display: grid;
@@ -12,7 +13,7 @@ export const Container = styled.div`
   /* border: 1px solid white; */
   align-items: center;
 
-  @media (min-width: 1200px) {
+  @media (min-width: ${BREAKPOINTS.MD}) {
     width: 120rem;
     margin: 0 auto;
     flex-direction: row;

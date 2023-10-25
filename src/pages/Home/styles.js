@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-rows: 114px auto 77px;
+  grid-template-rows: 11.4rem 90vh 7.7rem;
 
   grid-template-areas:
   "header"
@@ -13,6 +13,5 @@ export const Container = styled.div`
 export const Content = styled.div`
   grid-area: content;
 
-  min-height: 72.6rem;
   background-color: grey;
 `;

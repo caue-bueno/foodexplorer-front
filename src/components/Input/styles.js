@@ -9,7 +9,6 @@ export const Container = styled.div`
 
     background-color: ${({ theme }) => theme.COLORS.DARK_900};
 
-
     > input {
       width: 100%;
       padding: 1.6rem 1.4rem;
@@ -18,7 +17,5 @@ export const Container = styled.div`
       border-radius: 8px;
       outline: none;
     }
-
-  
 }
 `;

@@ -23,7 +23,11 @@ export function Header({ onOpenMenu }) {
           {isAdmin ? <span>admin</span> : <></>}
         </LogoWrapper>
         <Search>
-          <SearchInput placeholder={"Busque por pratos ou ingredientes"} icon={GoSearch} />
+          <SearchInput
+            placeholder={"Busque por pratos ou ingredientes"}
+            icon={GoSearch}
+            className="centered-input"
+          />
         </Search>
         <Cart data-is-admin={isAdmin}>
           <img src={Receipt} />

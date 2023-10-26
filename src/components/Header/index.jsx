@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
-import { Container, Cart, Amount, MenuButton, LogoWrapper, OrderButton, SignOutButton, Search } from "./styles";
+import { Container, Cart, Amount, MenuButton, LogoWrapper, OrderButton, SignOutButton, Search, ButtonText } from "./styles";
 import Logo from "../../assets/logoHeader.svg";
 import Menu from "../../assets/icons/menu.svg";
+import Favorite from "../../assets/icons/Favorite.svg";
 import Receipt from "../../assets/icons/receipt.svg";
 import SignOut from "../../assets/icons/SignOut.svg";
+import OrderHistory from "../../assets/icons/History.svg";
 import { SearchInput } from "../SearchInput";
 import { GoSearch } from "react-icons/go";
 
@@ -23,12 +25,21 @@ export function Header({ onOpenMenu }) {
           {isAdmin ? <span>admin</span> : <></>}
         </LogoWrapper>
         <Search>
+          
           <SearchInput
             placeholder={"Busque por pratos ou ingredientes"}
             icon={GoSearch}
-            className="centered-input"
           />
         </Search>
+        <ButtonText>
+          {/* <label>Meus favoritos</label> */}
+          <img src={Favorite} />
+          </ButtonText>
+        <ButtonText>
+        {/* <label>Histórico de pedidos</label> */}
+          <img src={OrderHistory} />
+          </ButtonText>
+        
         <Cart data-is-admin={isAdmin}>
           <img src={Receipt} />
           <Amount>

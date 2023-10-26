@@ -24,16 +24,16 @@ export const Container = styled.div`
         width: 72rem;
         margin: 2.9rem auto 0;
         justify-content: stretch;
-        gap: 1.6rem;
+        gap: 2.8rem;
       }
     }
 
     @media (min-width: ${BREAKPOINTS.LG}) {
       > div {
-        width: 88rem;
+        width: 99rem;
         margin: 2.9rem auto 0;
         justify-content: stretch;
-        gap: 3.6rem;
+        gap: 2.2rem;
       }
     }
 
@@ -81,9 +81,6 @@ export const Search = styled.div`
   height: 4.8rem;
   display: none;
   
-  .centered-input {
-    text-align: center;
-  }
 
   @media (min-width: ${BREAKPOINTS.MD}) {
     display: block;
@@ -105,6 +102,33 @@ export const MenuButton = styled.button`
   }
 `;
 
+export const FavoriteButton = styled.button`
+  display: none;
+  
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    display: block;
+    border: none;
+    background: none;
+    height: 2rem;
+  }
+`;
+
+export const ButtonText = styled.button`
+  display: none;
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    
+    display: block;
+    border: 0;
+    background: none;
+
+    &:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
+  }
+  `;
+
 export const Cart = styled.button`
   position: relative;
   border: none;
@@ -116,7 +140,7 @@ export const Cart = styled.button`
     display: none;
   }
 
-  @media (min-width: ${BREAKPOINTS.MD}) {
+  @media (min-width: ${BREAKPOINTS.LG}) {
     display: none;
   }
 `;
@@ -149,7 +173,7 @@ export const OrderButton = styled.button`
         box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 
-  @media (min-width: ${BREAKPOINTS.MD}) {
+  @media (min-width: ${BREAKPOINTS.LG}) {
   
   display: flex;
   justify-content: center;
@@ -174,6 +198,6 @@ export const SignOutButton = styled.button`
     display: block;
     border: none;
     background: none;
-    height: 3rem;
+    height: 3.5rem;
   }
 `;

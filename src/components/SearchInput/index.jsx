@@ -6,8 +6,10 @@ export function SearchInput({ icon: Icon, label, ...rest }) {
     <Container>
       <label>{label}</label>
       <div>
-        {Icon && <Icon size={20} className="icon"/>}
-        <input {...rest} />
+        <label>
+          {Icon && <Icon size={20} className="icon" />}
+          <input {...rest} />
+        </label>
       </div>
     </Container>
   )

@@ -125,7 +125,6 @@ export const LogoWrapper = styled.div`
       }
     }
   }
-
 }
 `;
 
@@ -154,23 +153,6 @@ export const MenuButton = styled.button`
   }
 `;
 
-// export const FavoriteButton = styled.button`
-//   display: none;
-  
-//   @media (min-width: ${BREAKPOINTS.MD}) {
-//     display: block;
-//     border: none;
-//     background: none;
-//     height: 2rem;
-    
-
-//     img {
-//     height: 2rem;
-      
-//     }
-//   }
-// `;
-
 export const ButtonText = styled.button`
   display: none;
 
@@ -180,7 +162,6 @@ export const ButtonText = styled.button`
     border: 0;
     background: none;
     cursor: pointer;
-
 
     label {
       display: none;
@@ -195,7 +176,6 @@ export const ButtonText = styled.button`
     label {
       display: block;
       cursor: pointer;
-
     }
   }
 
@@ -207,10 +187,6 @@ export const Cart = styled.button`
   background: none;
   height: 2.2rem;
 
-  /* &[data-is-admin="true"] {
-    display: none;
-  } */
-
   @media (min-width: ${BREAKPOINTS.LG}) {
     display: none;
   }
@@ -221,7 +197,6 @@ export const Amount = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-
   
   top: -6px;
   right: -6px;

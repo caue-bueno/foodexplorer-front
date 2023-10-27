@@ -6,6 +6,7 @@ import Favorite from "../../assets/icons/Favorite.svg";
 import Receipt from "../../assets/icons/receipt.svg";
 import SignOut from "../../assets/icons/SignOut.svg";
 import OrderHistory from "../../assets/icons/History.svg";
+import ForkKnife from "../../assets/icons/ForkKnife.svg";
 import { SearchInput } from "../SearchInput";
 import { GoSearch } from "react-icons/go";
 
@@ -39,7 +40,7 @@ export function Header({ onOpenMenu }) {
           isAdmin ?
             <ButtonText>
               <label>Novo prato</label>
-              <img src={OrderHistory} />
+              <img src={ForkKnife} />
             </ButtonText>
             :
             <ButtonText>

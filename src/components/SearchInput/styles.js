@@ -38,7 +38,7 @@ export const Container = styled.div`
     }
 }
 
-@media (min-width: ${BREAKPOINTS.XLG}) {
+@media (min-width: ${BREAKPOINTS.XXLG}) {
   > div {
     .icon {
       margin-left: 14.8rem;

@@ -12,7 +12,7 @@ import { GoSearch } from "react-icons/go";
 
 export function Header({ onOpenMenu }) {
 
-  const isAdmin = false;
+  const isAdmin = true;
 
   return (
     <Container data-is-admin={isAdmin}>
@@ -25,22 +25,29 @@ export function Header({ onOpenMenu }) {
           {isAdmin ? <span>admin</span> : <></>}
         </LogoWrapper>
         <Search>
-          
+
           <SearchInput
             placeholder={"Busque por pratos ou ingredientes"}
             icon={GoSearch}
           />
         </Search>
         <ButtonText>
-          {/* <label>Meus favoritos</label> */}
+          <label>Meus favoritos</label>
           <img src={Favorite} />
-          </ButtonText>
-        <ButtonText>
-        {/* <label>Histórico de pedidos</label> */}
-          <img src={OrderHistory} />
-          </ButtonText>
-        
-        <Cart data-is-admin={isAdmin}>
+        </ButtonText>
+        {
+          isAdmin ?
+            <ButtonText>
+              <label>Novo prato</label>
+              <img src={OrderHistory} />
+            </ButtonText>
+            :
+            <ButtonText>
+              <label>Histórico de pedidos</label>
+              <img src={OrderHistory} />
+            </ButtonText>
+        }
+        <Cart>
           <img src={Receipt} />
           <Amount>
             <p>0</p>

@@ -30,7 +30,7 @@ export const Container = styled.div`
 
     @media (min-width: ${BREAKPOINTS.LG}) {
       > div {
-        width: 99rem;
+        width: 93rem;
         margin: 2.9rem auto 0;
         justify-content: stretch;
         gap: 2.2rem;
@@ -39,7 +39,16 @@ export const Container = styled.div`
 
     @media (min-width: ${BREAKPOINTS.XLG}) {
       > div {
-        width: 114rem;
+        width: 115rem;
+        margin: 2.9rem auto 0;
+        justify-content: stretch;
+        gap: 2.6rem;
+      }
+    }
+
+    @media (min-width: ${BREAKPOINTS.XXLG}) {
+      > div {
+        width: 147rem;
         margin: 2.9rem auto 0;
         justify-content: stretch;
         gap: 3.6rem;
@@ -65,19 +74,63 @@ export const LogoWrapper = styled.div`
 
   @media (min-width: ${BREAKPOINTS.MD}) {
     img {
-      width: 150px;
+      width: 15rem;
+    }
+
+    &[data-is-admin="true"] {
+
+      flex-direction: column;
+      position: relative;
+      width: 15rem;
+      height: 5rem;
+      margin: 1px 0;
+
+      span {
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+      }
+
+      img {
+        position: absolute;
+        top: -5px;
+        width: 15rem;
+      }
     }
   }
 
   @media (min-width: ${BREAKPOINTS.LG}) {
     img {
-      width: 200px;
+      width: 20rem;
+    }
+    
+    &[data-is-admin="true"] {
+      width: 25rem;
+      
+      span {
+        right: 15px;
+        bottom: 0;
+      }
+
+      img {
+      top: -12px ;
+      width: 20rem;
+    }
+  } 
+  
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    &[data-is-admin="true"] {
+      span {
+        right: 28px;
+      }
     }
   }
+
+}
 `;
 
 export const Search = styled.div`
-  min-width: 32.1rem;
+  min-width: 31.6rem;
   height: 4.8rem;
   display: none;
   
@@ -86,9 +139,8 @@ export const Search = styled.div`
     display: block;
   }
 
-  @media (min-width: ${BREAKPOINTS.XLG}) {
-  width: 58.1rem;
-  flex: 1;
+  @media (min-width: ${BREAKPOINTS.XXLG}) {
+    min-width: 58.1rem;
   }
 `;
 
@@ -102,16 +154,22 @@ export const MenuButton = styled.button`
   }
 `;
 
-export const FavoriteButton = styled.button`
-  display: none;
+// export const FavoriteButton = styled.button`
+//   display: none;
   
-  @media (min-width: ${BREAKPOINTS.MD}) {
-    display: block;
-    border: none;
-    background: none;
-    height: 2rem;
-  }
-`;
+//   @media (min-width: ${BREAKPOINTS.MD}) {
+//     display: block;
+//     border: none;
+//     background: none;
+//     height: 2rem;
+    
+
+//     img {
+//     height: 2rem;
+      
+//     }
+//   }
+// `;
 
 export const ButtonText = styled.button`
   display: none;
@@ -121,12 +179,26 @@ export const ButtonText = styled.button`
     display: block;
     border: 0;
     background: none;
+    cursor: pointer;
 
-    &:focus {
-    outline: transparent;
-    box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
+
+    label {
+      display: none;
     }
   }
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    img {
+      display: none;
+    }
+
+    label {
+      display: block;
+      cursor: pointer;
+
+    }
+  }
+
   `;
 
 export const Cart = styled.button`
@@ -135,10 +207,9 @@ export const Cart = styled.button`
   background: none;
   height: 2.2rem;
 
-
-  &[data-is-admin="true"] {
+  /* &[data-is-admin="true"] {
     display: none;
-  }
+  } */
 
   @media (min-width: ${BREAKPOINTS.LG}) {
     display: none;

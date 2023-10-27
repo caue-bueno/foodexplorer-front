@@ -17,7 +17,7 @@ export const Container = styled.div`
 
   span {
     font-size: 1.2rem;
-    margin-left: .5rem;
+    margin-left: 1rem;
   }
 
   @media (min-width: ${BREAKPOINTS.MD}) {

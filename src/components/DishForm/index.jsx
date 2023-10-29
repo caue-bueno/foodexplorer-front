@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Container, Title } from "./styles";
 
-export function Form({ children, title }) {
+export function DishForm({ children, title }) {
   return (
     <Container>
       <Title>

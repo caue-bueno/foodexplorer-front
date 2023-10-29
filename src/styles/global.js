@@ -39,7 +39,7 @@ export default createGlobalStyle`
         
     }
 
-    input { 
+    input, textarea { 
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_500};

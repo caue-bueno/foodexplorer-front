@@ -9,13 +9,15 @@ export const Container = styled.div`
 
     background-color: ${({ theme }) => theme.COLORS.DARK_900};
 
-    > input {
+    > textarea {
       width: 100%;
+      height: 17.2rem;
       padding: 1.6rem 1.4rem;
       background-color: transparent;
       border: none;
       border-radius: 8px;
       outline: none;
+      resize: none;
     }
 }
 `;

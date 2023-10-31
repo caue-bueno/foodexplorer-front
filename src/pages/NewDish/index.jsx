@@ -5,6 +5,7 @@ import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
 import { Button } from "../../components/Button";
 import { UploadInput } from "../../components/UploadInput";
+import { IngredientsField } from "../../components/IngredientsField";
 
 
 export function NewDish() {
@@ -15,8 +16,8 @@ export function NewDish() {
         voltar
       </BackButton>
       <DishForm title="Novo prato">
-        <UploadInput  title={"Selecione imagem"}/>
-        <Input 
+        <UploadInput title={"Selecione imagem"} />
+        <Input
           label={"Nome"}
           placeholder={"Ex.: Salada Ceasar"}
           type="text"
@@ -24,7 +25,10 @@ export function NewDish() {
         {/* <option>
 
         </option> */}
-        <Input 
+        <IngredientsField>
+        
+        </IngredientsField>
+        <Input
           label={"Preço"}
           placeholder={"R$ 00,00"}
           type="text"

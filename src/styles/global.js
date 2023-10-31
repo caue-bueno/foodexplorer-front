@@ -10,8 +10,8 @@ export default createGlobalStyle`
     :root {
         font-size: 62.5%;
     }
-
-    input:focus {
+    
+    input:focus, textarea:focus {
         outline: transparent;
         box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
     }

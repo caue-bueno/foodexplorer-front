@@ -6,9 +6,11 @@ import { TextArea } from "../../components/TextArea";
 import { Button } from "../../components/Button";
 import { UploadInput } from "../../components/UploadInput";
 import { IngredientsField } from "../../components/IngredientsField";
+import { IngredientButton } from "../../components/IngredientButton";
 
 
 export function NewDish() {
+  
   return (
     <Container>
       <BackButton>
@@ -26,7 +28,8 @@ export function NewDish() {
 
         </option> */}
         <IngredientsField>
-        
+          <IngredientButton value={"Pão Naan"} />
+          <IngredientButton placeholder={"Adicionar"} isNew/>
         </IngredientsField>
         <Input
           label={"Preço"}

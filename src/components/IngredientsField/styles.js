@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   
   > div {
-    width: 100%;
+    display: flex;
     margin-top: 12px;
     border-radius: 8px;
-    padding: 1.2rem 2.4rem;
+    padding: .8rem;
+    gap: 1rem;
     flex-wrap: wrap;
 
     background-color: ${({ theme }) => theme.COLORS.DARK_900};

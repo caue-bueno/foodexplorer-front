@@ -1,4 +1,4 @@
-import { BackButton, Container } from "./styles";
+import { BackButton, ButtonWrapper, Container } from "./styles";
 import CaretLeft from "../../assets/icons/CaretLeft.svg";
 import { DishForm } from "../../components/DishForm";
 import { Input } from "../../components/Input";
@@ -10,7 +10,7 @@ import { IngredientButton } from "../../components/IngredientButton";
 
 
 export function EditDish() {
-  
+
   return (
     <Container>
       <BackButton>
@@ -29,7 +29,7 @@ export function EditDish() {
         </option> */}
         <IngredientsField>
           <IngredientButton value={"Pão Naan"} />
-          <IngredientButton placeholder={"Adicionar"} isNew/>
+          <IngredientButton placeholder={"Adicionar"} isNew />
         </IngredientsField>
         <Input
           label={"Preço"}
@@ -40,7 +40,10 @@ export function EditDish() {
           label={"Descrição"}
           placeholder={"Fale brevemente sobre o prato, seus ingredientes e composição"}
         />
-        <Button title={"Salvar alterações"} $primary/>
+        <ButtonWrapper>
+          <Button title={"Excluir prato"} />
+          <Button title={"Salvar alterações"} $primary disabled/>
+        </ButtonWrapper>
       </DishForm>
     </Container>
   )

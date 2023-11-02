@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
+  width: 100%;
   padding: 12px 0;
   border: 0;
   border-radius: 5px;

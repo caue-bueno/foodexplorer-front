@@ -7,7 +7,7 @@ export const Container = styled.div`
     margin-top: 12px;
     border-radius: 8px;
 
-    background-color: ${({ theme }) => theme.COLORS.DARK_900};
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
 
     > textarea {
       width: 100%;

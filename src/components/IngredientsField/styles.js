@@ -10,7 +10,7 @@ export const Container = styled.div`
     gap: 1rem;
     flex-wrap: wrap;
 
-    background-color: ${({ theme }) => theme.COLORS.DARK_900};
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
     
   }
 `;

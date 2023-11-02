@@ -8,7 +8,7 @@ export const Container = styled.div`
     border-radius: 8px;
     padding: 1.2rem 2.4rem;
 
-    background-color: ${({ theme }) => theme.COLORS.DARK_900};
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
     label {
       display: flex;
       font-family: 'Poppins', sans-serif;

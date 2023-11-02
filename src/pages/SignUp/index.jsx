@@ -26,7 +26,7 @@ export function SignUp() {
             placeholder="No mínimo 6 caracteres"
             type="password"
           />
-          <Button title="Criar conta" />
+          <Button title="Criar conta" $primary/>
 
           <a> Já tenho uma conta </a>
         </Form>

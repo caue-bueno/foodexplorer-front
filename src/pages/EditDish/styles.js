@@ -21,3 +21,10 @@ export const BackButton = styled.button`
     width: 8px;
   }
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 3.2rem;
+`;

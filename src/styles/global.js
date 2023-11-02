@@ -47,7 +47,7 @@ export default createGlobalStyle`
 
     label {
         font-family: 'Roboto', sans-serif;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_400};
 
     }

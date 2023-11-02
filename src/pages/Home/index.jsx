@@ -1,7 +1,8 @@
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Menu } from "../../components/Menu";
-import { NewDish } from "../NewDish";
+import { EditDish } from "../EditDish";
+// import { NewDish } from "../NewDish";
 import { Container, Content } from "./styles";
 import { useState } from "react";
 
@@ -14,7 +15,7 @@ export function Home() {
     <Container>
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
-        <NewDish/>
+        <EditDish/>
       </Content>
       <Footer />
       <Menu 

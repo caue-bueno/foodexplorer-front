@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
 `;
@@ -27,4 +26,5 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   width: 100%;
   gap: 3.2rem;
+  margin-bottom: 2rem;
 `;

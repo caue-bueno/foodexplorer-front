@@ -27,6 +27,13 @@ export default createGlobalStyle`
         text-decoration: none;
     }
 
+    h3 {
+        font-size: 2.7rem;
+        font-weight: medium;
+        font-family: 'Poppins', sans-serif;
+        line-height: 140%;
+    }
+
     button, a {
         cursor: pointer;
         transition: filter 0.2s;

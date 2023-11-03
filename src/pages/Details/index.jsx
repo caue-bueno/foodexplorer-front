@@ -1,6 +1,7 @@
 import { BackButton, Container, Description, DishPhoto, Item, Wrapper } from "./styles";
 import CaretLeft from "../../assets/icons/CaretLeft.svg";
 import { Button } from "../../components/Button";
+import Image from "../../assets/Salad.png";
 
 
 export function Details() {
@@ -10,7 +11,7 @@ export function Details() {
         <img src={CaretLeft} />
         voltar
       </BackButton>
-      <DishPhoto />
+      <DishPhoto $imagePath={Image}/>
       <Description>
         <h2>Salada Ravanello</h2>
         <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</p>

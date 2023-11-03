@@ -5,6 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100%;
   margin: 3rem 2.4rem 0;
+  border: 1px solid white;
+
 `;
 
 export const BackButton = styled.button`
@@ -29,7 +31,7 @@ export const DishPhoto = styled.div`
   height: 26.3rem;
   border: 1px solid white;
   margin: 1.6rem auto;
-  background-image: url($imagePath);
+  background-image: url(${({ $imagePath }) => $imagePath});
 `;
 
 export const Description = styled.div`

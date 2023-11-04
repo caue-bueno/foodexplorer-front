@@ -17,7 +17,7 @@ export function Home() {
     <Container>
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
-        <EditDish/>
+        <Details/>
       </Content>
       <Footer />
       <Menu 

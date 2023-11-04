@@ -4,13 +4,16 @@ import { BREAKPOINTS } from "../../styles/breakpoints";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   margin-top: 1rem;
   /* border: 1px solid white; */
   
   @media (min-width: ${BREAKPOINTS.XSM}){
+    margin: 1rem 1rem 0;
+  }
+
+  @media (min-width: ${BREAKPOINTS.SM}){
     margin: 1rem 2.4rem 0;
-    
+
   }
 `;
 
@@ -89,4 +92,67 @@ export const Item = styled.div`
   border-radius: .5rem;
   font-size: 1.4rem;
   line-height: 2.4rem;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  width: 28.5rem;
+  margin: 0 auto;
+  /* border: 1px solid green; */
+  > div {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    h3 {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media (min-width: ${BREAKPOINTS.SM}){
+    width: 31rem;
+    margin: 0 0;
+  }
+`;
+
+export const MinusButton = styled.button`
+  width: 2.7rem;
+  height: 2.7rem;
+  background-image: url(${({ $imagePath }) => $imagePath});
+  background-color: transparent;
+  border: none;
+`;
+
+export const PlusButton = styled.button`
+  width: 2.7rem;
+  height: 2.7rem;
+  background-image: url(${({ $imagePath }) => $imagePath});
+  background-color: transparent;
+  border: none;
+`;
+
+export const BuyButton = styled.button`
+  display: flex;
+  width: 16rem;
+  height: 3.8rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+  border: none;
+  border-radius: .5rem;
+
+  img {
+    width: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6rem;
+  }
+
+  @media (min-width: ${BREAKPOINTS.SM}){
+    width: 18.8rem;
+  }
 `;

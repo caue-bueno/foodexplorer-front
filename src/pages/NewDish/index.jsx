@@ -1,5 +1,4 @@
-import { BackButton, Container } from "./styles";
-import CaretLeft from "../../assets/icons/CaretLeft.svg";
+import { Container } from "./styles";
 import { DishForm } from "../../components/DishForm";
 import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
@@ -7,16 +6,14 @@ import { Button } from "../../components/Button";
 import { UploadInput } from "../../components/UploadInput";
 import { IngredientsField } from "../../components/IngredientsField";
 import { IngredientButton } from "../../components/IngredientButton";
+import { BackButton } from "../../components/BackButton";
 
 
 export function NewDish() {
   
   return (
     <Container>
-      <BackButton>
-        <img src={CaretLeft} />
-        voltar
-      </BackButton>
+      <BackButton />
       <DishForm title="Novo prato">
         <UploadInput title={"Selecione imagem"} />
         <Input

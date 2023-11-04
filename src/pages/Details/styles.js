@@ -4,11 +4,12 @@ import { BREAKPOINTS } from "../../styles/breakpoints";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
+  margin-top: 1rem;
   /* border: 1px solid white; */
   
   @media (min-width: ${BREAKPOINTS.XSM}){
-    margin: 3rem 2.4rem 0;
+    margin: 1rem 2.4rem 0;
     
   }
 `;
@@ -31,17 +32,19 @@ export const BackButton = styled.button`
 `;
 
 export const DishPhoto = styled.div`
-  width: 263px;
+  width: 26.3rem;
   height: 26.3rem;
-  margin: 1.6rem auto;
+  margin: 0 auto 1.6rem;
   background-image: url(${({ $imagePath }) => $imagePath});
+  /* border: 1px solid red; */
 `;
 
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  height: 31.6rem;
+  /* height: 31.6rem; */
+ 
   margin: 0 auto 1.6rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;

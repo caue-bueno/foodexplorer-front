@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  /* border: 1px solid white; */
+  border: 1px solid yellowgreen;
   
   @media (min-width: ${BREAKPOINTS.XSM}){
     margin: 1rem 1rem 0;
@@ -13,7 +13,17 @@ export const Container = styled.div`
 
   @media (min-width: ${BREAKPOINTS.SM}){
     margin: 1rem 2.4rem 0;
+  }
 
+  @media (min-width: ${BREAKPOINTS.MD}){
+      /* margin: 4.2rem 12.1rem; */
+    > div {
+      display: flex;
+      margin-top: 6.2rem;
+      align-items: center;
+      border: 1px solid white;
+      /* gap: 4.7rem; */
+    }
   }
 `;
 
@@ -39,7 +49,15 @@ export const DishPhoto = styled.div`
   height: 26.3rem;
   margin: 0 auto 1.6rem;
   background-image: url(${({ $imagePath }) => $imagePath});
-  /* border: 1px solid red; */
+  background-repeat: no-repeat;
+  border: 1px solid red;
+
+  @media (min-width: ${BREAKPOINTS.MD}){
+  margin: 0 0;
+  width: 39rem;
+  height: 39rem;
+    
+  }
 `;
 
 export const Description = styled.div`
@@ -51,7 +69,7 @@ export const Description = styled.div`
   margin: 0 auto 1.6rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 
   h2 {
     font-size: 2.7rem;
@@ -68,7 +86,13 @@ export const Description = styled.div`
 
     p {
     font-size: 1.6rem;
+    }
   }
+
+  @media (min-width: ${BREAKPOINTS.MD}){
+    /* min-width: 35rem; */
+    width: 100%;
+    margin: 0 0;
   }
 `;
 
@@ -78,12 +102,11 @@ export const Wrapper = styled.div`
   gap: 1.4rem;
   justify-content: center;
   margin-bottom: 2.4rem;
+  border: 1px solid red;
 
   @media (min-width: ${BREAKPOINTS.SM}){
     gap: 2.4rem;
-
   }
-
 `;
 
 export const Item = styled.div`

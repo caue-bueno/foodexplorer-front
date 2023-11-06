@@ -10,7 +10,7 @@ import Image from "../../assets/Salad.png";
 
 
 export function Details() {
-  const isAdmin = true;
+  const isAdmin = false;
 
   return (
     <Container>
@@ -19,7 +19,7 @@ export function Details() {
         <DishPhoto $imagePath={Image} />
         <Description>
           <h2>Salada Ravanello</h2>
-          <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</p>
+          <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.</p>
           <Wrapper>
             <Item>
               alface
@@ -41,7 +41,11 @@ export function Details() {
             </Item>
           </Wrapper>
           {
-            isAdmin ? <Button title={"Editar prato"} $primary /> :
+            isAdmin ? 
+            <div>
+              <Button title={"Editar prato"} $primary /> 
+            </div>
+            :
               <ButtonWrapper>
                 <div>
                   <MinusButton $imagePath={Minus} />

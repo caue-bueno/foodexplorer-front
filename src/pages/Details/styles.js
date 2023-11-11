@@ -51,13 +51,14 @@ export const DishPhoto = styled.div`
   background-image: url(${({ $imagePath }) => $imagePath});
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   /* border: 1px solid red; */
 
   @media (min-width: ${BREAKPOINTS.MD}){
   margin: 0 0;
   width: 39rem;
   height: 39rem;
-    
+  margin-right: 2rem ;
   }
 `;
 

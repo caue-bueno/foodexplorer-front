@@ -13,14 +13,13 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   grid-area: content;
-  overflow: scroll;
+  overflow: auto;
 
   padding: 1rem 1.6rem 0;
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
   
   @media (min-width: ${BREAKPOINTS.XSM}){
     padding: 1rem 3.2rem 0;
-
   }
 
 `;

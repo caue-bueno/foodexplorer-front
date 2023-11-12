@@ -7,6 +7,7 @@ import { UploadInput } from "../../components/UploadInput";
 import { IngredientsField } from "../../components/IngredientsField";
 import { IngredientButton } from "../../components/IngredientButton";
 import { BackButton } from "../../components/BackButton";
+import { CategoryMenu } from "../../components/CategoryMenu";
 
 
 export function NewDish() {
@@ -15,6 +16,9 @@ export function NewDish() {
     <Container>
       <BackButton />
       <DishForm title="Novo prato">
+        <CategoryMenu>
+
+        </CategoryMenu>
         <UploadInput title={"Selecione imagem"} />
         <Input
           label={"Nome"}
@@ -22,7 +26,7 @@ export function NewDish() {
           type="text"
         />
         {/* <option>
-
+0
         </option> */}
         <IngredientsField>
           <IngredientButton value={"Pão Naan"} />

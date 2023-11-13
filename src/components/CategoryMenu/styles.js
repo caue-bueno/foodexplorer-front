@@ -7,19 +7,25 @@ export const Container = styled.div`
 
 
 #category-select label {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
 }
 
 #select-button {
-  margin-top: 1rem;
+  margin-top: 1.6rem;
   display: flex;
   padding: 1.6rem;
   align-items: center;
   justify-content: space-between;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_900};
   border-radius: .5rem;
-  
+}
+
+.not-selected {
+  background-color: ${({ theme }) => theme.COLORS.DARK_900};
+}
+
+.selected {
+  background-color: ${({ theme }) => theme.COLORS.DARK_800};
 }
 
 #chevrons {
@@ -67,10 +73,6 @@ export const Container = styled.div`
   display: none;
 }
 
-.opened {
-  display: block;
-}
-
 .option {
   display: flex;
   align-items: center;
@@ -95,9 +97,10 @@ export const Container = styled.div`
   inset: 0;
 }
 
-#category-select:has(#options-view-button:checked) + #options {
+
+/* #category-select:has(#options-view-button:checked) + #options {
  display: block;
-}
+} */
 `;
 
 export const MenuDown = styled.div`

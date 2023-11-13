@@ -11,26 +11,21 @@ import { CategoryMenu } from "../../components/CategoryMenu";
 
 
 export function NewDish() {
-  
+
   return (
     <Container>
       <BackButton />
       <DishForm title="Novo prato">
-        <CategoryMenu>
-
-        </CategoryMenu>
         <UploadInput title={"Selecione imagem"} />
         <Input
           label={"Nome"}
           placeholder={"Ex.: Salada Ceasar"}
           type="text"
         />
-        {/* <option>
-0
-        </option> */}
+        <CategoryMenu />
         <IngredientsField>
           <IngredientButton value={"Pão Naan"} />
-          <IngredientButton placeholder={"Adicionar"} isNew/>
+          <IngredientButton placeholder={"Adicionar"} isNew />
         </IngredientsField>
         <Input
           label={"Preço"}

@@ -9,40 +9,52 @@ import { Container, MenuDown, MenuUp } from "./styles";
 export function CategoryMenu() {
 
   let select = document.querySelector('.select'),
-  selectedValue = document.getElementById('selected-value'),
-  optionsViewButton = document.getElementById('options-view-button'),
-  inputsOptions = document.querySelectorAll('.option input')
+    selectedValue = document.getElementById('selected-value'),
+    optionsViewButton = document.getElementById('options-view-button'),
+    inputsOptions = document.querySelectorAll('.option input'),
+    options = document.getElementById('options'),
+    selectButton = document.getElementById('select-button')
 
-  
+  console.log('isChecked');
 
-    function CloseMenu() {
-      optionsViewButton.checked = false;
+  function toggleMenu() {
+    const isChecked = optionsViewButton.checked
+    if (isChecked) {
+      options.classList.remove('closed')
+    } else {
+      options.classList.add('closed')
     }
+  }
 
+  function selectOption() {
+    selectButton.classList.remove('not-selected');
+    selectButton.classList.add('selected');
+    optionsViewButton.checked = false;
+    toggleMenu()
+  }
 
   inputsOptions.forEach(input => {
     input.addEventListener('click', event => {
-      // console.log("Input clicked");
+      // console.log(optionsViewButton.checked);
+      // optionsViewButton.checked = false;
       selectedValue.textContent = input.dataset.label
 
-      const isMouseOrTouch =
-        event.pointerType == "mouse" || event.pointerType == "touch"
-      // console.log("isMouseOrTouch:", isMouseOrTouch);
-
-      isMouseOrTouch && CloseMenu();
+      let isMouseOrTouch = event.type == "click" || event.type == "touchstart"
+      isMouseOrTouch && selectOption();
     })
-  })
 
+    optionsViewButton.addEventListener('click', () => toggleMenu());
+  })
 
 
 
   return (
     <Container className="select">
+      <label> Categoria </label>
       <div id="category-select">
-        <label> Categoria </label>
         <input type="checkbox" id="options-view-button" />
 
-        <div id="select-button">
+        <div id="select-button" className="not-selected">
           <div id="selected-value">Selecione a categoria</div>
 
           <div id="chevrons">

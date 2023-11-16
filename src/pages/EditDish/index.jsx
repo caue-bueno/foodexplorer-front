@@ -7,6 +7,7 @@ import { UploadInput } from "../../components/UploadInput";
 import { IngredientsField } from "../../components/IngredientsField";
 import { IngredientButton } from "../../components/IngredientButton";
 import { BackButton } from "../../components/BackButton";
+import { CategoryMenu } from "../../components/CategoryMenu";
 
 
 export function EditDish() {
@@ -21,9 +22,7 @@ export function EditDish() {
           placeholder={"Ex.: Salada Ceasar"}
           type="text"
         />
-        {/* <option>
-
-        </option> */}
+        <CategoryMenu />
         <IngredientsField>
           <IngredientButton value={"Pão Naan"} />
           <IngredientButton placeholder={"Adicionar"} isNew />

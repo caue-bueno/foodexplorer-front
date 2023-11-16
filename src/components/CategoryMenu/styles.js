@@ -36,7 +36,9 @@ export const Container = styled.div`
   display: none;
 }
 
-#options-view-button:focus + #select-button, #options-view-button:checked + #select-button {
+#options-view-button:focus + #select-button 
+/* #options-view-button:checked + #select-button  */
+{
   outline: transparent;
   box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
 }
@@ -69,6 +71,11 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_900};
 }
 
+/* #options:focus {
+  background-color: ${({ theme }) => theme.COLORS.DARK_800};
+
+} */
+
 .closed {
   display: none;
 }
@@ -89,6 +96,18 @@ export const Container = styled.div`
 .option:has(input:checked) {
   background-color: ${({ theme }) => theme.COLORS.DARK_800};
 }
+
+.option:has(input:focus) {
+  outline: transparent;
+  box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
+}
+
+  .option.focused {
+  outline: transparent;
+  box-shadow: 0 0 0 2px ${({ theme }) => theme.COLORS.LIGHT_100};
+  color: red;
+}
+
 
 .option input[type="radio"] {
   all: unset;

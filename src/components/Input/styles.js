@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/breakpoints';
 
 export const Container = styled.div`
   
@@ -17,5 +18,10 @@ export const Container = styled.div`
       border-radius: 8px;
       outline: none;
     }
+  }
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+  min-width: 22.9rem;
+  width: 100%;
 }
 `;

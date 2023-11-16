@@ -1,9 +1,17 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
   color: ${({ theme }) => theme.COLORS.LIGHT_400};
   font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
+  
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    min-width: 20rem;
+    max-width: 36.4rem;
+    width: 100%;
+  }
 
 
 #category-select label {

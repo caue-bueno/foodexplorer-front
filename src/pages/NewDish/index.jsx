@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { ButtonWrapper, Container, Wrapper } from "./styles";
 import { DishForm } from "../../components/DishForm";
 import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
@@ -16,27 +16,35 @@ export function NewDish() {
     <Container>
       <BackButton />
       <DishForm title="Novo prato">
-        <UploadInput title={"Selecione imagem"} />
-        <Input
-          label={"Nome"}
-          placeholder={"Ex.: Salada Ceasar"}
-          type="text"
-        />
-        <CategoryMenu />
-        <IngredientsField>
-          <IngredientButton value={"Pão Naan"} />
-          <IngredientButton placeholder={"Adicionar"} isNew />
-        </IngredientsField>
-        <Input
-          label={"Preço"}
-          placeholder={"R$ 00,00"}
-          type="text"
-        />
+        <Wrapper>
+          <UploadInput title={"Selecione imagem"} />
+          <Input
+            label={"Nome"}
+            placeholder={"Ex.: Salada Ceasar"}
+            type="text"
+          />
+          <CategoryMenu />
+        </Wrapper>
+        <Wrapper>
+          <IngredientsField>
+            <IngredientButton value={"Pão Naan"} />
+            <IngredientButton placeholder={"Adicionar"} isNew />
+          </IngredientsField>
+          <div>
+            <Input
+              label={"Preço"}
+              placeholder={"R$ 00,00"}
+              type="text"
+            />
+          </div>
+        </Wrapper>
         <TextArea
           label={"Descrição"}
           placeholder={"Fale brevemente sobre o prato, seus ingredientes e composição"}
         />
-        <Button title={"Salvar alterações"} disabled />
+        <ButtonWrapper>
+          <Button title={"Salvar alterações"} disabled />
+        </ButtonWrapper>
       </DishForm>
     </Container>
   )

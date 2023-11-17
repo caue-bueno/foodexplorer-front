@@ -7,34 +7,33 @@ export const Container = styled.div`
   font-family: 'Roboto', sans-serif;
   
 
-  @media (min-width: ${BREAKPOINTS.MD}) {
-    min-width: 20rem;
-    max-width: 36.4rem;
-    width: 100%;
-  }
+@media (min-width: ${BREAKPOINTS.MD}) {
+  min-width: 20rem;
+  max-width: 36.4rem;
+  width: 100%;
+}
 
-
-#category-select label {
+label {
   font-size: 1.6rem;
 }
 
 #select-button {
-  margin-top: 1.6rem;
   display: flex;
   padding: 1.6rem;
+  height: 5rem;
   align-items: center;
   justify-content: space-between;
 
-  border-radius: .5rem;
+  border-radius: 8px;
+  background-color: ${({ theme }) => theme.COLORS.DARK_800};
 }
 
-.not-selected {
-  background-color: ${({ theme }) => theme.COLORS.DARK_900};
+/* .not-selected {
 }
 
 .selected {
   background-color: ${({ theme }) => theme.COLORS.DARK_800};
-}
+} */
 
 #chevrons {
   display: flex;
@@ -61,6 +60,7 @@ export const Container = styled.div`
 
 #category-select {
   position: relative;
+  margin-top: 1.2rem;
 }
 
 #options-view-button {
@@ -75,8 +75,8 @@ export const Container = styled.div`
 #options {
   margin-top: .25rem;
   border-radius: .5rem;
-  border: 1px solid ${({ theme }) => theme.COLORS.DARK_800};
-  background-color: ${({ theme }) => theme.COLORS.DARK_900};
+  border: 1px solid ${({ theme }) => theme.COLORS.DARK_900};
+  background-color: ${({ theme }) => theme.COLORS.DARK_800};
 }
 
 /* #options:focus {
@@ -93,16 +93,17 @@ export const Container = styled.div`
   align-items: center;
   gap: .5rem;
   position: relative;
+  z-index: 3;
   padding: 1rem;
-  border-bottom: 2px solid ${({ theme }) => theme.COLORS.DARK_800};
+  border-bottom: 2px solid ${({ theme }) => theme.COLORS.DARK_900};
 }
 
   .option:hover {
-  background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  background-color: ${({ theme }) => theme.COLORS.DARK_900};
 }
 
 .option:has(input:checked) {
-  background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  background-color: ${({ theme }) => theme.COLORS.DARK_900};
 }
 
 .option:has(input:focus) {
@@ -121,6 +122,8 @@ export const Container = styled.div`
   all: unset;
 
   position: absolute;
+  z-index: 3;
+
   inset: 0;
 }
 

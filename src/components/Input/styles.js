@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: ${BREAKPOINTS.MD}) {
-  min-width: 22.9rem;
+  min-width: 18rem;
   width: 100%;
 }
 `;

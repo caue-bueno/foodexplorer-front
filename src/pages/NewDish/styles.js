@@ -5,21 +5,13 @@ export const Container = styled.div`
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-`;
 
-export const BackButton = styled.button`
-  display: flex;
-  width: 7rem;
-  align-items: center;
-  background: none;
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  font-weight: medium;
+  @media (min-width: ${BREAKPOINTS.LG}) {
+    margin: 4rem;
+  }
 
-  img {
-    margin-right: 5px;
-    width: 8px;
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    margin: 4rem 12rem;
   }
 `;
 
@@ -30,6 +22,11 @@ export const Wrapper = styled.div`
 
 
   @media (min-width: ${BREAKPOINTS.MD}) {
+    flex-direction: row;
+    gap: 1.4rem;
+  }
+
+  @media (min-width: ${BREAKPOINTS.LG}) {
     flex-direction: row;
     gap: 3.2rem;
   }

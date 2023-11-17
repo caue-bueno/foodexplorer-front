@@ -5,9 +5,9 @@ export const Container = styled.div`
   
   > div {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 1.2rem;
     border-radius: 8px;
-    padding: 1.2rem 2.4rem;
+    padding: 1.3rem 1.2rem;
 
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
     label {
@@ -30,6 +30,6 @@ export const Container = styled.div`
 }
 
 @media (min-width: ${BREAKPOINTS.MD}) {
-  min-width: 22.9rem;
+  min-width: fit-content;
 }
 `;

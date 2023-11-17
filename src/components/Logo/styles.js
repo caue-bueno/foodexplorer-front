@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/breakpoints';
 
 export const Container = styled.div`
   display: flex;
@@ -15,8 +16,8 @@ export const Container = styled.div`
     margin-right: 1.1rem;
   }
 
-  @media (min-width: 1200px) {
-  margin: 0 10.8rem 0; 
+  @media (min-width: ${BREAKPOINTS.LG}) {
+  margin-right: auto;
   }
 
 `;

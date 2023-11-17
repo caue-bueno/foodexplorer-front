@@ -8,17 +8,26 @@ export const Container = styled.div`
   height: 100vh;
 
   > div {
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid white; */
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  @media (min-width: ${BREAKPOINTS.MD}) {
-    width: 120rem;
-    margin: 0 auto;
-    flex-direction: row;
-    gap: 2rem;
-  }
+    @media (min-width: ${BREAKPOINTS.MD}) {
+      width: 70rem;
+      margin: 0 auto;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    @media (min-width: ${BREAKPOINTS.LG}) {
+      width: 102rem;
+      justify-content: space-between;
+      padding: 0 4rem;
+    }
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+      padding: 0;
+    }
 }
 
 `;

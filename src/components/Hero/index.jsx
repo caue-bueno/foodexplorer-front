@@ -11,6 +11,7 @@ export function Hero() {
         <span>Sabores inigualáveis</span>
         <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
       </HeroText>
+      
     </Container>
   )
 }

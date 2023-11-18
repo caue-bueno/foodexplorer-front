@@ -6,11 +6,11 @@ export const Container = styled.div`
   width: 38.4rem;
   width: 100%;
   height: 14.9rem;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   position: relative;
 
   @media (min-width: ${BREAKPOINTS.XLG}) {
-    height: 20.2rem;
+    height: 27.2rem;
   }
 
 `;
@@ -25,7 +25,7 @@ export const Box = styled.div`
   border-radius: .3rem;
 
   @media (min-width: ${BREAKPOINTS.XLG}) {
-    height: 14rem;
+    height: 18rem;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -37,25 +37,30 @@ export const HeroImage = styled.div`
   height: 100%;
   background-image: url(${({ $imagePath }) => $imagePath});
   background-size: cover;
-  /* background-repeat: no-repeat; */
   background-position: center;
   position: absolute;
   left: -5px;
+  /* border: 1px solid red; */
+
 
   @media (min-width: ${BREAKPOINTS.XSM}) {
-    width: 15.1rem;
+    width: 14.4rem;
     left: -15px;
   }
 
   @media (min-width: ${BREAKPOINTS.SM}) {
-    width: 19.1rem;
-    left: -25px;
+    width: 18.8rem;
+  }
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    width: 23.8rem;
   }
 
   @media (min-width: ${BREAKPOINTS.XLG}) {
-    width: 40.1rem;
-    left: -25px;
-    border: 1px solid red;
+    width: 50.1rem;
+    left: -45px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 `;
 
@@ -68,6 +73,7 @@ export const HeroText = styled.div`
   bottom: 15px;
   left: 105px;
   font-family: 'Poppins', sans-serif;
+  color: ${({ theme }) => theme.COLORS.LIGHT_300};
   
   span {
     font-size: 1.6rem;
@@ -88,10 +94,9 @@ export const HeroText = styled.div`
   }
 
   @media (min-width: ${BREAKPOINTS.SM}) {
-    width: calc(100% - 165px);
-    /* height: 6.2rem; */
+    width: calc(100% - 185px);
     bottom: 5px ;
-    left: 165px;
+    left: 185px;
 
     span {
     font-size: 1.8rem;
@@ -99,9 +104,26 @@ export const HeroText = styled.div`
     }
   }
 
-  @media (min-width: ${BREAKPOINTS.XLG}) {
-    left: 400px;
-
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    width: calc(100% - 240px);
+    left: 240px;
   }
 
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    width: calc(100% - 460px);
+    left: 460px;
+    bottom: 60px;
+
+    span {
+      font-size: 4rem;
+      line-height: 140%;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.6rem;
+    }
+
+  }
 `;
+

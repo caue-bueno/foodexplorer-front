@@ -1,25 +1,15 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-rows: 11.4rem 78vh 7.7rem;
+  padding-left: 8px;
 
-  grid-template-areas:
-  "header"
-  "content"
-  "footer";
-`;
-
-export const Content = styled.div`
-  grid-area: content;
-  overflow: auto;
-
-  padding: 1rem 1.6rem 0;
-  background-color: ${({ theme }) => theme.COLORS.DARK_500};
-  
-  @media (min-width: ${BREAKPOINTS.XSM}){
-    padding: 1rem 3.2rem 0;
+  @media (min-width: ${BREAKPOINTS.LG}){
+    padding: 0 12.4rem;
   }
 
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    padding: 2rem 12.4rem 0 ;
+    
+  }
 `;

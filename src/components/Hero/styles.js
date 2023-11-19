@@ -40,6 +40,7 @@ export const HeroImage = styled.div`
   background-position: center;
   position: absolute;
   left: -5px;
+  bottom: -5px;
   /* border: 1px solid red; */
 
 

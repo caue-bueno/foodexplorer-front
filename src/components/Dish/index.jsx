@@ -6,7 +6,7 @@ import Minus from "../../assets/icons/Minus.svg";
 import Plus from "../../assets/icons/Plus.svg";
 
 export function Dish() {
-  const isAdmin = true;
+  const isAdmin = false;
 
 
   return (

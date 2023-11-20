@@ -6,13 +6,12 @@ export const Container = styled.div`
   width: 38.4rem;
   width: 100%;
   height: 14.9rem;
-  /* border: 1px solid white; */
+  margin-bottom: 3.8rem;
   position: relative;
 
   @media (min-width: ${BREAKPOINTS.XLG}) {
     height: 27.2rem;
   }
-
 `;
 
 export const Box = styled.div`
@@ -28,7 +27,6 @@ export const Box = styled.div`
     height: 18rem;
     background-repeat: no-repeat;
     background-size: cover;
-
   }
 `;
 
@@ -41,8 +39,6 @@ export const HeroImage = styled.div`
   position: absolute;
   left: -5px;
   bottom: -5px;
-  /* border: 1px solid red; */
-
 
   @media (min-width: ${BREAKPOINTS.XSM}) {
     width: 14.4rem;

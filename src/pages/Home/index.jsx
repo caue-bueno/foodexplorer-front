@@ -11,6 +11,12 @@ export function Home() {
         <Section title={"Refeições"}>
           <Dish />
         </Section>
+        <Section title={"Sobremesas"}>
+          <Dish />
+        </Section>
+        <Section title={"Bebidas"}>
+          <Dish />
+        </Section>
     </Container>
   )
 }

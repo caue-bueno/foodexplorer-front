@@ -40,6 +40,7 @@ export const Icon = styled.button`
   background-image: url(${({ $imagePath }) => $imagePath});
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 export const Wrapper = styled.div`

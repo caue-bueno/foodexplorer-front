@@ -16,6 +16,10 @@ export const Container = styled.div`
   }
 
   span {
+    color: ${({ theme }) => theme.COLORS.LIGHT_200};
+    
+    font-family: 'DM Sans', sans-serif;
+    
     font-size: 1.2rem;
     margin-left: 1rem;
   }

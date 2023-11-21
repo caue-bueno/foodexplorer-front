@@ -122,6 +122,7 @@ export const Wrapper = styled.div`
 
 export const Item = styled.div`
   padding: .4rem .8rem;
+  color: ${({ theme }) => theme.COLORS.LIGHT_100};
   background-color: ${({ theme }) => theme.COLORS.DARK_1000};
   border-radius: .5rem;
   font-size: 1.4rem;
@@ -139,6 +140,7 @@ export const ButtonWrapper = styled.div`
     align-items: center;
 
     h3 {
+      font-family: 'Roboto', sans-serif;
       font-size: 2.2rem;
     }
   }

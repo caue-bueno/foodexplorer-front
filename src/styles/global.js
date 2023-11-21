@@ -18,7 +18,7 @@ export default createGlobalStyle`
 
     body {
         background-color: ${({ theme }) => theme.COLORS.DARK_400};
-        color: ${({ theme }) => theme.COLORS.LIGHT_100};
+        color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
         -webkit-font-smoothing: antialiased;
     }
@@ -43,7 +43,6 @@ export default createGlobalStyle`
         line-height: 24px;
         font-weight: medium;
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
-        
     }
 
     input, textarea { 
@@ -56,7 +55,6 @@ export default createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_400};
-
     }
 
 `;

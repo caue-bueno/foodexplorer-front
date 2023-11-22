@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   label {
     font-family: 'Poppins', sans-serif;
-    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    /* color: ${({ theme }) => theme.COLORS.LIGHT_300}; */
     font-size: 1.8rem;
     font-weight: medium;
     line-height: 140%;

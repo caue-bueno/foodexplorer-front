@@ -70,7 +70,7 @@ export const HeroText = styled.div`
   bottom: 15px;
   left: 105px;
   font-family: 'Poppins', sans-serif;
-  color: ${({ theme }) => theme.COLORS.LIGHT_300};
+  /* color: ${({ theme }) => theme.COLORS.LIGHT_300}; */
   
   span {
     font-size: 1.6rem;

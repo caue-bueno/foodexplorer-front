@@ -6,6 +6,6 @@ export const Container = styled.div`
 
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
-  color: ${({ theme }) => theme.COLORS.LIGHT_300};
+  /* color: ${({ theme }) => theme.COLORS.LIGHT_300}; */
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.DARK_900};
 `;

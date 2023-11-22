@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
   display: flex;
@@ -13,15 +14,38 @@ export const Container = styled.div`
     justify-content: end;
   }
 
-  p {
+  h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: medium;
     line-height: 24px;
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 140%;
+    }
   }
 
   h3 {
     font-size: 1.4rem;
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+      font-size: 2.4rem;
+    }
+  }
+
+  p {
+    color: ${({ theme }) => theme.COLORS.CAKE_400};
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    line-height: 160%;
+    text-align: center;
+    display: none;
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+      display: block;
+    }
   }
 
   span {
@@ -29,6 +53,17 @@ export const Container = styled.div`
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     color: ${({ theme }) => theme.COLORS.CAKE_200};
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+      font-size: 3.2rem;
+      line-height: 160%;
+      
+    }
+  }
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+    width: 27.7rem;
+    height: 44.8rem;
     }
 `;
 
@@ -49,6 +84,7 @@ export const Wrapper = styled.div`
   align-items: center;
   width: auto;
   height: 100%;
+  margin-top: -1rem;
   gap: 1.2rem;
 
   div {
@@ -64,11 +100,26 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: .5rem;
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+      flex-direction: row;
+      gap: 1.6rem;
+    }
   }
 
   div > div p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
+
+    @media (min-width: ${BREAKPOINTS.XLG}) {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 160%;
+    }  
+  }
+  
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+
   }
 `;
 
@@ -80,6 +131,11 @@ export const DishPhoto = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    width: 17.6rem;
+    height: 17.6rem;
+    }
 `;
 
 export const MinusButton = styled.button`
@@ -114,6 +170,11 @@ export const AddButton = styled.button`
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
     line-height: 24px;
+  }
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    width: 9.2rem;
+    height: 4.8rem;
   }
 
 `;

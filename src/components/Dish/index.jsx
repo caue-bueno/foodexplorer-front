@@ -20,9 +20,10 @@ export function Dish() {
       <Wrapper>
         <DishPhoto $imagePath={Image} />
         <div>
-          <p>Salada Ravanello</p>
+          <h4>Salada Ravanello</h4>
           <h3>&gt;</h3>
         </div>
+          <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim</p>
         <span> R$ 49,97 </span>
         {
           isAdmin ?

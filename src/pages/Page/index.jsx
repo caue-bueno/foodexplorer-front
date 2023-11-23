@@ -6,6 +6,7 @@ import { Details } from "../Details";
 import { EditDish } from "../EditDish";
 import { Home } from "../Home";
 import { NewDish } from "../NewDish";
+import { Payment } from "../Payment";
 import { Container, Content } from "./styles";
 import { useState } from "react";
 
@@ -18,7 +19,7 @@ export function Page() {
     <Container>
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
-        <Home/>
+        <Payment/>
       </Content>
       <Footer />
       <Menu 

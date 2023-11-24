@@ -2,11 +2,45 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
+  display: flex;
   padding: 2.6rem .5rem 0;
+  height: 100%;
+  position: relative;
 
   @media (min-width: ${BREAKPOINTS.SM}) {
     padding: 4.6rem 1.9rem 0;
   }
+
+  /* label {
+    font-size: 3.2rem;
+    line-height: 140%;
+  }
+
+  p {
+    font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: medium;
+      line-height: 160%;
+  }
+
+ > div:last-child {
+    width: 21.6rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.9rem;
+
+    @media (min-width: ${BREAKPOINTS.LG}) {
+      display: none;
+    }
+  }
+
+> div:nth-last-child(2) {
+  margin-top: 1.6rem;
+} */
+`;
+
+export const Wrapper = styled.div`
+  width: 100%;
 
   label {
     font-size: 3.2rem;
@@ -18,20 +52,25 @@ export const Container = styled.div`
       font-size: 2rem;
       font-weight: medium;
       line-height: 160%;
-
-      @media (min-width: ${BREAKPOINTS.SM}) {
-        
-      }
   }
 
  > div:last-child {
     width: 21.6rem;
-    margin-left: auto;
-    margin-top: 3.1rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.9rem;
+
+    @media (min-width: ${BREAKPOINTS.LG}) {
+      display: none;
+    }
   }
 
 > div:nth-last-child(2) {
   margin-top: 1.6rem;
+}
+
+@media (min-width: ${BREAKPOINTS.LG}) {
+ width: 50%;
 }
 `;
 
@@ -50,7 +89,6 @@ export const Item = styled.div`
     width: 70%;
     height: 5.1rem;
   /* border: 1px solid yellow; */
-
 
     div {
       display: flex;
@@ -93,4 +131,19 @@ export const ButtonText = styled.div`
   color: ${({ theme }) => theme.COLORS.TOMATO_400};
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
+`;
+
+export const PaymentBox = styled.div`
+  display: none;
+
+  @media (min-width: ${BREAKPOINTS.LG}) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    label {
+      font-size: 3.2rem;
+      line-height: 140%;
+    }
+  }
 `;

@@ -1,17 +1,38 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
-  padding: 4.6rem 1.9rem 0;
+  padding: 2.6rem .5rem 0;
+
+  @media (min-width: ${BREAKPOINTS.SM}) {
+    padding: 4.6rem 1.9rem 0;
+  }
 
   label {
     font-size: 3.2rem;
     line-height: 140%;
   }
 
-  /* div {
-    display: flex;
-    flex-direction: column;
-  } */
+  p {
+    font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: medium;
+      line-height: 160%;
+
+      @media (min-width: ${BREAKPOINTS.SM}) {
+        
+      }
+  }
+
+ > div:last-child {
+    width: 21.6rem;
+    margin-left: auto;
+    margin-top: 3.1rem;
+  }
+
+> div:nth-last-child(2) {
+  margin-top: 1.6rem;
+}
 `;
 
 export const Item = styled.div`
@@ -35,14 +56,14 @@ export const Item = styled.div`
       display: flex;
       align-items: center;
   /* border: 1px solid red; */
-
     }
 
     p {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2rem;
-      font-weight: medium;
-      line-height: 160%;
+        font-size: 1.6rem;
+
+      @media (min-width: ${BREAKPOINTS.SM}) {
+        font-size: 2rem;
+      }
     }
 
     span {
@@ -66,6 +87,7 @@ export const DishPhoto = styled.div`
 
 export const ButtonText = styled.div`
   display: flex;
+  margin-top: .5rem;
   justify-content: start;
   align-items: center;
   color: ${({ theme }) => theme.COLORS.TOMATO_400};

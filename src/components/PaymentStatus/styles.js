@@ -15,6 +15,7 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
     line-height: 160%;
     font-weight: bold;
+    text-align: center;
   }
 `;
 

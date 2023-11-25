@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Container, Form, PaymentButton } from "./styles";
 import Pix from "../../assets/icons/Pix.svg";
 import CreditCard from "../../assets/icons/CreditCard.svg";
@@ -50,25 +51,25 @@ export function PaymentMethod() {
         </PaymentButton>
       </div>
       <div>
-        {/* <div id="qrcode">
+        <div id="qrcode">
           <img src={QrCode} alt="qrcode" />
         </div>
         <Form id="form" className="hidden">
           <label>Número do Cartão</label>
-          <input placeholder="0000 0000 0000 0000" />
+          <input inputMode="numeric" type="number" placeholder="0000 0000 0000 0000" />
           <div>
             <div>
               <label>Validade</label>
-              <input type="text" />
+              <input inputMode="numeric" type="number" placeholder="04/25"/>
             </div>
             <div>
               <label>CVC</label>
-              <input type="text" />
+              <input inputMode="numeric" type="number" placeholder="000"/>
             </div>
           </div>
             <Button title={"Finalizar pagamento"} $primary />
-        </Form> */}
-        <PaymentStatus />
+        </Form>
+        {/* <PaymentStatus /> */}
       </div>
     </Container>
   )

@@ -11,32 +11,13 @@ export const Container = styled.div`
     padding: 4.6rem 1.9rem 0;
   }
 
-  /* label {
-    font-size: 3.2rem;
-    line-height: 140%;
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    padding: 4.6rem 10.9rem 0;
   }
 
-  p {
-    font-family: 'Poppins', sans-serif;
-      font-size: 2rem;
-      font-weight: medium;
-      line-height: 160%;
+  @media (min-width: ${BREAKPOINTS.XXLG}) {
+    padding: 4.6rem 15.9rem 0;
   }
-
- > div:last-child {
-    width: 21.6rem;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.9rem;
-
-    @media (min-width: ${BREAKPOINTS.LG}) {
-      display: none;
-    }
-  }
-
-> div:nth-last-child(2) {
-  margin-top: 1.6rem;
-} */
 `;
 
 export const Wrapper = styled.div`
@@ -140,7 +121,8 @@ export const PaymentBox = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
-
+    align-items: center;
+  
     label {
       font-size: 3.2rem;
       line-height: 140%;

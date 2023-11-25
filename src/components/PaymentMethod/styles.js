@@ -1,12 +1,14 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 43rem;
   /* height: 32.3rem; */
   height: fit-content;
   display: flex;
   flex-direction: column;
   /* border: 1px solid green; */
+  margin-top: 2.7rem;
   
   > div:nth-child(1) {
     display: flex;
@@ -43,6 +45,10 @@ export const Container = styled.div`
   .hidden {
     display: none;
   }
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    width: 53rem;
+  }
 `;
 
 export const PaymentButton = styled.div`
@@ -70,6 +76,21 @@ export const PaymentButton = styled.div`
 
 export const Form = styled.form`
   width: 100%;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+  label {
+    font-size: 1.6rem;
+    line-height: 160%;
+  }
 
   input {
     padding: 1.2rem 1.4rem;

@@ -6,12 +6,8 @@ import { PaymentMethod } from "../../components/PaymentMethod";
 export function Order() {
   return (
     <Container>
-      <PaymentMethod></PaymentMethod>
-
-
-      {/* <Wrapper>
+      <Wrapper>
         <label>Meu pedido</label>
-
         <Item>
           <DishPhoto $imagePath={Image} />
           <div>
@@ -45,12 +41,11 @@ export function Order() {
         </div>
       </Wrapper>
       <PaymentBox>
-        <label>Pagamento</label>
         <div>
-          <div></div>
-          <div></div>
+          <label>Pagamento</label>
+          <PaymentMethod />
         </div>
-      </PaymentBox> */}
+      </PaymentBox>
     </Container>
   )
 }

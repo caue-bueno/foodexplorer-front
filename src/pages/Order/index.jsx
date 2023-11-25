@@ -1,11 +1,15 @@
 import { ButtonText, Container, DishPhoto, Item, PaymentBox, Wrapper } from "./styles";
 import Image from "../../assets/Salad.png";
 import { Button } from "../../components/Button";
+import { PaymentMethod } from "../../components/PaymentMethod";
 
-export function Payment() {
+export function Order() {
   return (
     <Container>
-      <Wrapper>
+      <PaymentMethod></PaymentMethod>
+
+
+      {/* <Wrapper>
         <label>Meu pedido</label>
 
         <Item>
@@ -46,7 +50,7 @@ export function Payment() {
           <div></div>
           <div></div>
         </div>
-      </PaymentBox>
+      </PaymentBox> */}
     </Container>
   )
 }

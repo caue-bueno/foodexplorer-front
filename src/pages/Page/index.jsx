@@ -6,7 +6,7 @@ import { Details } from "../Details";
 import { EditDish } from "../EditDish";
 import { Home } from "../Home";
 import { NewDish } from "../NewDish";
-import { Payment } from "../Payment";
+import { Order } from "../Order";
 import { Container, Content } from "./styles";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ export function Page() {
     <Container>
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
-        <Payment/>
+        <Order/>
       </Content>
       <Footer />
       <Menu 

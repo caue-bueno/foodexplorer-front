@@ -4,6 +4,7 @@ import CreditCard from "../../assets/icons/CreditCard.svg";
 import QrCode from "../../assets/icons/QrCode.svg";
 import { useEffect } from "react";
 import { Button } from "../Button"
+import { PaymentStatus } from "../PaymentStatus";
 
 export function PaymentMethod() {
   useEffect(() => {
@@ -67,6 +68,7 @@ export function PaymentMethod() {
           </div>
             <Button title={"Finalizar pagamento"} $primary />
         </Form> */}
+        <PaymentStatus />
       </div>
     </Container>
   )

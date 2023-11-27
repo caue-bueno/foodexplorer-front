@@ -5,6 +5,7 @@ import { Menu } from "../../components/Menu";
 import { Details } from "../Details";
 import { EditDish } from "../EditDish";
 import { Favorites } from "../Favorites";
+import { History } from "../History";
 import { Home } from "../Home";
 import { NewDish } from "../NewDish";
 import { Order } from "../Order";
@@ -20,7 +21,7 @@ export function Page() {
     <Container>
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
-        <Favorites/>
+        <History/>
       </Content>
       <Footer />
       <Menu 

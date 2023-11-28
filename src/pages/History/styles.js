@@ -10,11 +10,25 @@ export const Container = styled.div`
     line-height: 140%;
   }
 
+  span {
+    display: none;
+  }
+
   > div {
     display: flex;
     flex-direction: column;
     gap: 1.7rem;
     margin-top: 1.7rem;
+  }
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    span {
+      display: inline;
+    }
+  }
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    padding: 5.6rem 12rem 0;
   }
 `;
 
@@ -24,7 +38,7 @@ export const Item = styled.div`
   gap: 1.6rem;
   width: 100%;
   min-height: 11.4rem;
-  padding: 1.6rem 2.1rem;
+  padding: 1.6rem 1.1rem;
 
   border: 2px solid ${({ theme }) => theme.COLORS.DARK_1000};
   border-radius: 8px;
@@ -37,12 +51,20 @@ export const Item = styled.div`
 
   > div {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
 
     > div {
       display: flex;
       align-items: center;
       gap: .8rem;
+    }
+  }
+
+  @media (min-width: ${BREAKPOINTS.XSM}) {
+    padding: 1.6rem 2.1rem;
+
+    > div {
+      gap: 3.1rem;
     }
   }
 
@@ -54,14 +76,139 @@ export const Item = styled.div`
 export const Dot = styled.div`
   width: 8px;
   height: 8px;
-  background-color: ${({ theme }) => theme.COLORS.TOMATO_300};
+  background-color: ${({ theme, $status }) => $status === 1 ? theme.COLORS.TOMATO_300 : $status === 2 ? theme.COLORS.CARROT_100 : theme.COLORS.MINT_100 };
   border-radius: 50%;
 `;
 
 export const Table = styled.div`
   width: 100%;
-  height: 10rem;
-  border: 2px solid ${({ theme }) => theme.COLORS.DARK_1000};
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  
+  > div:last-child {
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+  }
+`;
+
+export const Header = styled.div`
+  display: none;
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    line-height: 160%;
+  }
+  
+  > div {
+    padding: 2.1rem 1.2rem;
+  }
+
+  > div:nth-child(1) {
+    width: 15%;
+    border-top-left-radius: 8px;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+    border-top-width: 2px;
+    border-left-width: 2px;
+  }
+  > div:nth-child(2) {
+    width: 15%;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+    border-top-width: 2px;
+
+  }
+  > div:nth-child(3) {
+    width: 55%;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+    border-top-width: 2px;
+
+  }
+  > div:nth-child(4) {
+    width: 15%;
+    border-top-right-radius: 8px;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+    border-top-width: 2px;
+    border-right-width: 2px;
+  }
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    display: flex;
+  }
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    > div {
+      padding: 2.1rem 2.4rem;
+    }
+
+    > div:nth-child(1) {
+    width: 12%;
+    }
+    > div:nth-child(2) {
+      width: 12%;
+    }
+    > div:nth-child(3) {
+      width: 61%;
+    }
+    > div:nth-child(4) {
+      width: 15%;
+    }
+  }
+`;
+
+export const Row = styled.div`
+  display: none;
+
+  font-family: 'Roboto', sans-serif;
+  color: ${({ theme }) => theme.COLORS.LIGHT_400};
+  font-size: 1.4rem;
+  line-height: 160%;
+
+  > div {
+    padding: 0 1.2rem;
+    min-height: 6.7rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
+
+  > div:nth-child(1) {
+    width: 15%;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+    border-left-width: 2px;
+    
+  }
+  > div:nth-child(2) {
+    width: 15%;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+  }
+  > div:nth-child(3) {
+    width: 55%;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+  }
+  > div:nth-child(4) {
+    width: 15%;
+    border: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+    border-right-width: 2px;
+  }
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    display: flex;
+  }
+
+  @media (min-width: ${BREAKPOINTS.XLG}) {
+    
+    > div {
+      padding: 2.1rem 1.6rem;
+    }
+
+    > div:nth-child(1) {
+      width: 12%;    
+    }
+    > div:nth-child(2) {
+      width: 12%;
+    }
+    > div:nth-child(3) {
+      width: 61%;
+    }
+    > div:nth-child(4) {
+      width: 15%;
+    }
+  }
 `;

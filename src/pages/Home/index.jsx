@@ -9,7 +9,13 @@ export function Home() {
     <Container>
       <Hero />
         <Section title={"Refeições"}>
-          <Dish />
+          <div className="swiper">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
+                <Dish />  
+              </div>
+            </div>
+          </div>
         </Section>
         <Section title={"Sobremesas"}>
           <Dish />

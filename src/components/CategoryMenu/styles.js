@@ -4,7 +4,7 @@ import { BREAKPOINTS } from "../../styles/breakpoints";
 export const Container = styled.div`
   color: ${({ theme }) => theme.COLORS.LIGHT_400};
   font-size: 1.4rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   
 
 @media (min-width: ${BREAKPOINTS.MD}) {

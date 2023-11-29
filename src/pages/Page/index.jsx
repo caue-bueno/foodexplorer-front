@@ -21,7 +21,7 @@ export function Page() {
     <Container>
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
-        <History/>
+        <NewDish/>
       </Content>
       <Footer />
       <Menu 

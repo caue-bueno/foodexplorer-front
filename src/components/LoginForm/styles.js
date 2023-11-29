@@ -24,11 +24,10 @@ export const Container = styled.form`
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
   margin: 0 0;
   }
-
 `;
 
 export const Title = styled.div`
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins);
   font-size: 32px;
   line-height: 140%;
   align-self: center;

@@ -10,7 +10,7 @@ export const Container = styled.div`
   }
   
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     font-size: 2rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
     line-height: 160%;

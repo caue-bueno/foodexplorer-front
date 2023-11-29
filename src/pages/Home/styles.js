@@ -10,7 +10,6 @@ export const Container = styled.div`
 
   @media (min-width: ${BREAKPOINTS.XLG}) {
     padding: 2rem 12.4rem 0 ;
-    
   }
 `;
 

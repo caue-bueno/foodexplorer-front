@@ -10,7 +10,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     border-radius: 8px;
-    /* border: 1px solid white; */
 
     background-color: ${({ theme }) => theme.COLORS.DARK_900};
 

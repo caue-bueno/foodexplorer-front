@@ -5,7 +5,7 @@ export const Container = styled.div`
   padding: 5.6rem .5rem 0;
   
   label {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-size: 3.2rem;
     line-height: 140%;
   }
@@ -43,7 +43,7 @@ export const Item = styled.div`
   border: 2px solid ${({ theme }) => theme.COLORS.DARK_1000};
   border-radius: 8px;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   color: ${({ theme }) => theme.COLORS.LIGHT_400};
   font-size: 1.4rem;
   line-height: 160%;
@@ -92,7 +92,7 @@ export const Header = styled.div`
   display: none;
 
   h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     font-size: 1.4rem;
     line-height: 160%;
   }
@@ -155,7 +155,7 @@ export const Header = styled.div`
 export const Row = styled.div`
   display: none;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   color: ${({ theme }) => theme.COLORS.LIGHT_400};
   font-size: 1.4rem;
   line-height: 160%;

@@ -5,12 +5,14 @@ export const Container = styled.div`
   padding: 2.6rem .5rem 0;
   
   label {
+    font-family: var(--font-poppins);
     font-size: 3.2rem;
     line-height: 140%;
   }
 
   p {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: var(--font-poppins);
       font-size: 2rem;
       font-weight: medium;
       line-height: 160%;

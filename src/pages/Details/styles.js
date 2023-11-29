@@ -34,7 +34,7 @@ export const BackButton = styled.button`
   background: none;
   border: none;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins);
   font-size: 2.4rem;
   font-weight: medium;
 
@@ -69,7 +69,7 @@ export const Description = styled.div`
  
   margin: 0 auto 1.6rem;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins);
   /* border: 1px solid yellow; */
 
   h2 {
@@ -139,7 +139,7 @@ export const ButtonWrapper = styled.div`
     align-items: center;
 
     h3 {
-      font-family: 'Roboto', sans-serif;
+      font-family: var(--font-roboto);
       font-size: 2.2rem;
     }
   }
@@ -183,7 +183,7 @@ export const BuyButton = styled.button`
 
   p {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     line-height: 1.6rem;
   }
 

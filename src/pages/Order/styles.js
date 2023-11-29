@@ -24,12 +24,13 @@ export const Wrapper = styled.div`
   width: 100%;
 
   label {
+    font-family: var(--font-poppins);
     font-size: 3.2rem;
     line-height: 140%;
   }
 
   p {
-    font-family: 'Poppins', sans-serif;
+      font-family: var(--font-poppins);
       font-size: 2rem;
       font-weight: medium;
       line-height: 160%;
@@ -88,7 +89,7 @@ export const Item = styled.div`
     span {
       min-width: 4.7rem;
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
-      font-family: 'Roboto', sans-serif;
+      font-family: var(--font-roboto);
       font-size: 1.2rem;
       margin-left: .5rem;
     }
@@ -110,8 +111,9 @@ export const ButtonText = styled.div`
   justify-content: start;
   align-items: center;
   color: ${({ theme }) => theme.COLORS.TOMATO_400};
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   font-size: 1.2rem;
+  cursor: pointer;
 `;
 
 export const PaymentBox = styled.div`
@@ -124,6 +126,7 @@ export const PaymentBox = styled.div`
     align-items: center;
   
     label {
+      font-family: var(--font-poppins);
       font-size: 3.2rem;
       line-height: 140%;
     }

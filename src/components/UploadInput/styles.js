@@ -12,7 +12,7 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
     label {
       display: flex;
-      font-family: 'Poppins', sans-serif;
+      font-family: var(--font-poppins);
       font-weight: medium;
       font-size: 1.4rem;
       line-height: 2.4rem;

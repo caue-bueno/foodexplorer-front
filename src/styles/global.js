@@ -9,6 +9,8 @@ export default createGlobalStyle`
 
     :root {
         font-size: 62.5%;
+        --font-roboto: 'Roboto', sans-serif;
+        --font-poppins: 'Poppins', sans-serif;
     }
     
     input:focus, textarea:focus {
@@ -30,7 +32,8 @@ export default createGlobalStyle`
     h3 {
         font-size: 2.7rem;
         font-weight: medium;
-        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        font-family: var(--font-poppins);
         line-height: 140%;
     }
 
@@ -38,7 +41,8 @@ export default createGlobalStyle`
         cursor: pointer;
         transition: filter 0.2s;
 
-        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        font-family: var(--font-poppins);
         font-size: 1.4rem;
         line-height: 24px;
         font-weight: medium;
@@ -46,13 +50,16 @@ export default createGlobalStyle`
     }
 
     input, textarea { 
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: var(--font-roboto);
+
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_500};
     }
 
     label {
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: var(--font-roboto);
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_400};
     }

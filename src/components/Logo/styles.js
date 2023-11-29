@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 27.8rem;
 
   h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     font-weight: bold;
     font-size: 37px;
   }

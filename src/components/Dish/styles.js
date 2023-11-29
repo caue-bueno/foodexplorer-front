@@ -6,7 +6,6 @@ export const Container = styled.div`
   flex-direction: column;
   width: 21rem;
   height: 29.2rem;
-  /* border: 1px solid white; */
   padding: 1.6rem;
 
   div:nth-child(1) {
@@ -15,7 +14,7 @@ export const Container = styled.div`
   }
 
   h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-size: 1.4rem;
     font-weight: medium;
     line-height: 24px;
@@ -37,7 +36,7 @@ export const Container = styled.div`
 
   p {
     color: ${({ theme }) => theme.COLORS.CAKE_400};
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     font-size: 1.4rem;
     line-height: 160%;
     text-align: center;
@@ -50,7 +49,7 @@ export const Container = styled.div`
 
   span {
     margin-top: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     font-size: 1.6rem;
     color: ${({ theme }) => theme.COLORS.CAKE_200};
 
@@ -176,6 +175,5 @@ export const AddButton = styled.button`
     width: 9.2rem;
     height: 4.8rem;
   }
-
 `;
 

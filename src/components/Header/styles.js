@@ -11,7 +11,6 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 5.6rem 2.8rem 0;
-    /* border: 1px solid green; */
   }
   &[data-is-admin="true"] {
       > div {
@@ -62,7 +61,7 @@ export const LogoWrapper = styled.div`
   gap: .8rem;
 
   span {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     font-size: 12px;
     line-height: 160%;
     color: ${({ theme }) => theme.COLORS.CAKE_200};
@@ -205,7 +204,7 @@ export const Amount = styled.div`
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   border-radius: 50%;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins);
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
   font-size: 14px;
   line-height: 24px;

@@ -9,6 +9,14 @@ export const Container = styled.div`
   flex-direction: column;
   /* border: 1px solid green; */
   margin-top: 2.7rem;
+
+  
+  
+  label {
+    font-family: var(--font-roboto);
+    font-size: 1.6rem;
+    line-height: 160%;
+  }
   
   > div:nth-child(1) {
     display: flex;
@@ -63,7 +71,7 @@ export const PaymentButton = styled.div`
   border-top-left-radius: ${({ $border }) => $border === 'left' ? '8px' : '0'};
   border-top-right-radius: ${({ $border }) => $border === 'right' ? '8px' : '0'};
 
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   font-size: 1.6rem;
 
   cursor: pointer;

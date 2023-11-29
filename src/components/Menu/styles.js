@@ -30,7 +30,7 @@ export const Header = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
   align-items: center;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   font-size: 2.1rem;
 
   > div {

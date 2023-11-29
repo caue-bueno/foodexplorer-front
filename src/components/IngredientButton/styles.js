@@ -3,9 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  
-  /* margin: .8rem; */
-  
+    
   background-color: ${({ theme, isNew }) => isNew ? "transparent" : theme.COLORS.LIGHT_600};
   border: ${({ theme, isNew }) => isNew ? `2px dashed ${theme.COLORS.LIGHT_500}` : 'none' };
   border-radius: .8rem;
@@ -36,7 +34,6 @@ export const Container = styled.div`
     svg {
       margin-right: 10px;
     }
-
 
     .button-delete {
     color: ${({ theme }) => theme.LIGHT_100}

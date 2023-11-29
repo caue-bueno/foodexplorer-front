@@ -62,15 +62,12 @@ export const HeroImage = styled.div`
 `;
 
 export const HeroText = styled.div`
-  /* width: 17rem; */
   width: calc(100% - 105px);
   height: 8.2rem;
   position: absolute;
-  /* border: 1px red solid; */
   bottom: 15px;
   left: 105px;
-  font-family: 'Poppins', sans-serif;
-  /* color: ${({ theme }) => theme.COLORS.LIGHT_300}; */
+  font-family: var(--font-poppins);
   
   span {
     font-size: 1.6rem;
@@ -78,6 +75,7 @@ export const HeroText = styled.div`
   }
   
   p {
+    font-family: var(--font-roboto);
     font-size: 1.2rem;
     margin-top: 3px;
   }
@@ -117,10 +115,8 @@ export const HeroText = styled.div`
     }
 
     p {
-      font-family: 'Roboto', sans-serif;
       font-size: 1.6rem;
     }
-
   }
 `;
 

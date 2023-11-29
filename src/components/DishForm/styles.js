@@ -24,7 +24,7 @@ export const Container = styled.form`
 `;
 
 export const Title = styled.div`
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins);
   font-size: 28px;
   line-height: 140%;
   margin-top: 2.4rem;

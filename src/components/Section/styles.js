@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   label {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
     font-size: 1.8rem;
     font-weight: medium;

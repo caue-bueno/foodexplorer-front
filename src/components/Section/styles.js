@@ -2,9 +2,12 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
+  width: 100%;
   margin-top: 2.4rem;
   display: flex;
   flex-direction: column;
+  /* border: 1px solid red; */
+  overflow: hidden;
 
   label {
     font-family: var(--font-poppins);
@@ -15,6 +18,7 @@ export const Container = styled.div`
     margin-bottom: 2.4rem;
   }
 
+
   @media (min-width: ${BREAKPOINTS.XLG}) {
     margin-top: 4.8rem;
 
@@ -22,4 +26,9 @@ export const Container = styled.div`
       font-size: 3.2rem;
     }
   }
+`;
+
+export const SwiperContainer = styled.div`
+  /* display: flex; */
+  /* border: 1px solid yellow; */
 `;

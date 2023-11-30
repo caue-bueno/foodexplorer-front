@@ -11,5 +11,20 @@ export const Container = styled.div`
   @media (min-width: ${BREAKPOINTS.XLG}) {
     padding: 2rem 12.4rem 0 ;
   }
+
+  #swiper {
+    /* width: 46rem; */
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  .swiper-slide {
+    /* border: 1px solid green; */
+    width: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+
+  
 `;
 

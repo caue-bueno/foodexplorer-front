@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-import { Container } from "./styles";
+import { Container, SwiperContainer } from "./styles";
 
 export function Section({ title, children }) {
   return (
     <Container>
       <label>{title}</label>
-      <div>{children}</div>
+      <SwiperContainer>{children}</SwiperContainer>
     </Container>
   )
 }

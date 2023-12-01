@@ -29,6 +29,17 @@ export function Home() {
       navigation: {
         nextEl: "#nav-next",
         prevEl: "#nav-prev",
+      },
+      breakpoints: {
+        320: {
+          spaceBetween: 7
+        },
+        375: {
+          spaceBetween: 17
+        },
+        425: {
+          spaceBetween: 27
+        }
       }
       // coverflowEffect: {
       //   rotate: 30,

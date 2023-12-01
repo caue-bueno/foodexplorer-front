@@ -55,6 +55,11 @@ export const ButtonPrev = styled.div`
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  display: none;
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    display: block;
+  }
 `;
 
 export const ButtonNext = styled.div`
@@ -71,4 +76,9 @@ export const ButtonNext = styled.div`
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  display: none;
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    display: block;
+  }
 `;

@@ -92,6 +92,7 @@ export const Form = styled.form`
 }
 
 input[type=number] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 

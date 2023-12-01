@@ -34,7 +34,7 @@ export const Container = styled.div`
     }
   }
 
-  p {
+  div + p  {
     color: ${({ theme }) => theme.COLORS.CAKE_400};
     font-family: var(--font-roboto);
     font-size: 1.4rem;
@@ -115,10 +115,6 @@ export const Wrapper = styled.div`
       font-weight: bold;
       line-height: 160%;
     }  
-  }
-  
-  @media (min-width: ${BREAKPOINTS.XLG}) {
-
   }
 `;
 

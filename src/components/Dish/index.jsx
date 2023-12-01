@@ -4,10 +4,26 @@ import favorite from "../../assets/icons/Favorite.svg";
 import Image from "../../assets/Salad.png";
 import Minus from "../../assets/icons/Minus.svg";
 import Plus from "../../assets/icons/Plus.svg";
+import { useState } from "react";
 
+// quantity = String(quantity).padStart(2, "0")
 export function Dish() {
+  let [quantity, setQuantity] = useState("01");
   const isAdmin = false;
+  
+  function Add() {
+    if (quantity >= 1) {
+      const numericQuantity = parseInt(quantity, 10);
+      setQuantity((numericQuantity + 1).toString().padStart(2, "0"));
+    }
+  }
 
+  function Remove() {
+    if (quantity > 1) {
+      const numericQuantity = parseInt(quantity, 10);
+      setQuantity((numericQuantity - 1).toString().padStart(2, "0"));
+    }
+  }
 
   return (
     <Container>
@@ -31,9 +47,9 @@ export function Dish() {
             :
             <div>
               <div>
-                <MinusButton $imagePath={Minus} />
-                <p>01</p>
-                <PlusButton $imagePath={Plus} />
+                <MinusButton $imagePath={Minus} onClick={Remove} />
+                <p>{quantity}</p>
+                <PlusButton $imagePath={Plus} onClick={Add}/>
               </div>
               <AddButton>incluir</AddButton>
             </div>

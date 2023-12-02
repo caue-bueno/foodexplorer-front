@@ -66,15 +66,14 @@ export const Container = styled.div`
     }
 `;
 
-export const Icon = styled.button`
-  width: 2.4rem;
-  height: 2.4rem;
-  border: none;
-  background: transparent;
+export const Icon = styled.div`
+  width: 2.6rem;
+  height: 2.6rem;
   background-image: url(${({ $imagePath }) => $imagePath});
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
 `;
 
 export const Wrapper = styled.div`
@@ -93,6 +92,10 @@ export const Wrapper = styled.div`
     gap: .5rem;
   }
 
+  div:nth-child(2) {
+    cursor: pointer;
+  }
+  
   div:nth-last-child(1) {
     display: flex;
     flex-direction: column;

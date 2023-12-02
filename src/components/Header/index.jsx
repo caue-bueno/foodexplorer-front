@@ -2,7 +2,7 @@
 import { Container, Cart, Amount, MenuButton, LogoWrapper, OrderButton, SignOutButton, Search, ButtonText } from "./styles";
 import Logo from "../../assets/logos/logoHeader.svg";
 import Menu from "../../assets/icons/menu.svg";
-import Favorite from "../../assets/icons/Favorite.svg";
+import Heart from "../../assets/icons/Heart.svg";
 import Receipt from "../../assets/icons/receipt.svg";
 import SignOut from "../../assets/icons/SignOut.svg";
 import OrderHistory from "../../assets/icons/History.svg";
@@ -34,7 +34,7 @@ export function Header({ onOpenMenu }) {
         </Search>
         <ButtonText>
           <label>Meus favoritos</label>
-          <img src={Favorite} />
+          <img src={Heart} />
         </ButtonText>
         {
           isAdmin ?

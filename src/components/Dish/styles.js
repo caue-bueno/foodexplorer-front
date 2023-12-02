@@ -7,6 +7,7 @@ export const Container = styled.div`
   width: 21rem;
   height: 29.2rem;
   padding: 1.6rem;
+  border-radius: 0.5rem;
 
   div:nth-child(1) {
     display: flex;

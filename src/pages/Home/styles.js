@@ -12,11 +12,10 @@ export const Container = styled.div`
     padding: 2rem 12.4rem 0 ;
   }
 
-  #swiper {
-    /* width: 46rem; */
-    /* display: flex;
-    justify-content: center; */
+  .mySwiper{
     position: relative;
+    border-radius: 0.5rem;
+
   }
 
   .swiper-slide {
@@ -77,6 +76,42 @@ export const ButtonNext = styled.div`
   border: none;
   cursor: pointer;
   display: none;
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    display: block;
+  }
+`;
+
+export const Overlay = styled.div`
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+export const ShadowLeft = styled.div`
+  display: none;
+  width: 20rem;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 7, 10, 0.6), transparent);
+  z-index: 2;
+  pointer-events: none;
+
+  @media (min-width: ${BREAKPOINTS.MD}) {
+    display: block;
+  }
+`;
+
+export const ShadowRight = styled.div`
+  display: none;
+  width: 20rem;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 7, 10, 0.6), transparent);
+  z-index: 2;
+  pointer-events: none;
 
   @media (min-width: ${BREAKPOINTS.MD}) {
     display: block;

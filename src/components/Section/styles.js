@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   /* border: 1px solid red; */
+  border-radius: 0.5rem;
   overflow: hidden;
 
   label {
@@ -29,6 +30,4 @@ export const Container = styled.div`
 `;
 
 export const SwiperContainer = styled.div`
-  /* display: flex; */
-  /* border: 1px solid yellow; */
 `;

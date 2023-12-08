@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { Container } from "./styles";
 
-export function MenuButton({ title }) {
+export function MenuButton({ title, onClick }) {
   return (
-    <Container>
+    <Container onClick={onClick}>
       {title}
     </Container>  
     )

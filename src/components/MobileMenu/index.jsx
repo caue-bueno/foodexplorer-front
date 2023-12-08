@@ -10,9 +10,15 @@ import { useNavigate } from "react-router-dom";
 export function MobileMenu({ menuIsOpen, onCloseMenu }) {
   const navigate = useNavigate();
 
-function click() {
-  console.log("alo")
-}
+  function onNewDish() {
+    navigate("newdish")
+    onCloseMenu();
+  }
+
+  function onFavorites() {
+    navigate("favorites")
+    onCloseMenu();
+  }
 
   return (
     <Container data-menu-is-open={menuIsOpen}>
@@ -27,8 +33,8 @@ function click() {
       <Content>
         <SearchInput placeholder={"Busque por pratos ou ingredientes"} icon={GoSearch} />
         <Wrapper>
-          <MenuButton title={"Novo prato"} />
-          <MenuButton title={"Meus favoritos"} />
+          <MenuButton title={"Novo prato"} onClick={onNewDish} />
+          <MenuButton title={"Meus favoritos"} onClick={onFavorites}/>
           <MenuButton title={"Sair"} />
         </Wrapper>
       </Content>

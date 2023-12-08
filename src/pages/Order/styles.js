@@ -4,7 +4,7 @@ import { BREAKPOINTS } from "../../styles/breakpoints";
 export const Container = styled.div`
   display: flex;
   padding: 2.6rem .5rem 0;
-  height: 100%;
+  min-height: 55rem;
   position: relative;
 
   @media (min-width: ${BREAKPOINTS.SM}) {
@@ -22,6 +22,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 100%;
+  
 
   label {
     font-family: var(--font-poppins);
@@ -107,6 +108,7 @@ export const DishPhoto = styled.div`
 
 export const ButtonText = styled.div`
   display: flex;
+  width: fit-content;
   margin-top: .5rem;
   justify-content: start;
   align-items: center;

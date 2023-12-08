@@ -6,11 +6,11 @@ import Receipt from "../../assets/icons/receipt.svg";
 import Minus from "../../assets/icons/Minus.svg";
 import Plus from "../../assets/icons/Plus.svg";
 import Image from "../../assets/Salad.png";
-
-
+import { useNavigate } from "react-router-dom";
 
 export function Details() {
-  const isAdmin = false;
+  const isAdmin = true;
+  const navigate = useNavigate();
 
   return (
     <Container>
@@ -43,7 +43,7 @@ export function Details() {
           {
             isAdmin ? 
             <div>
-              <Button title={"Editar prato"} $primary /> 
+              <Button title={"Editar prato"} $primary onClick={() => navigate("/editdish")} /> 
             </div>
             :
               <ButtonWrapper>

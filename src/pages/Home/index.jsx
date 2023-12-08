@@ -4,12 +4,10 @@ import { Section } from "../../components/Section";
 import { Dish } from "../../components/Dish";
 import CaretLeft from "../../assets/icons/CaretLeft.svg";
 import CaretRight from "../../assets/icons/CaretRight.svg";
-// import Swiper from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-// import { useEffect } from "react";
 
 export function Home() {
 
@@ -57,6 +55,7 @@ export function Home() {
 
   return (
     <Container>
+      {/* <Header /> */}
       <Hero />
       {/* <Section title={"Refeições"}>
         <div id="swiper">
@@ -139,6 +138,7 @@ export function Home() {
       <Section title={"Bebidas"}>
         <Dish />
       </Section>
+      {/* <Footer /> */}
     </Container>
   )
 }

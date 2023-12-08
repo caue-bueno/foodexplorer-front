@@ -9,11 +9,14 @@ import OrderHistory from "../../assets/icons/History.svg";
 import ForkKnife from "../../assets/icons/ForkKnife.svg";
 import { SearchInput } from "../SearchInput";
 import { GoSearch } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 
 
 export function Header({ onOpenMenu }) {
 
   const isAdmin = true;
+  const navigate = useNavigate();
+
 
   return (
     <Container data-is-admin={isAdmin}>
@@ -21,40 +24,39 @@ export function Header({ onOpenMenu }) {
         <MenuButton onClick={onOpenMenu}>
           <img src={Menu} />
         </MenuButton>
-        <LogoWrapper data-is-admin={isAdmin}>
+        <LogoWrapper data-is-admin={isAdmin} onClick={() => navigate("/")}>
           <img src={Logo} />
           {isAdmin ? <span>admin</span> : <></>}
         </LogoWrapper>
         <Search>
-
           <SearchInput
             placeholder={"Busque por pratos ou ingredientes"}
             icon={GoSearch}
           />
         </Search>
-        <ButtonText>
+        <ButtonText onClick={() => navigate("/favorites")}>
           <label>Meus favoritos</label>
           <img src={Heart} />
         </ButtonText>
         {
           isAdmin ?
-            <ButtonText>
+            <ButtonText onClick={() => navigate("/newdish")}>
               <label>Novo prato</label>
               <img src={ForkKnife} />
             </ButtonText>
             :
-            <ButtonText>
+            <ButtonText onClick={() => navigate("/history")}>
               <label>Histórico de pedidos</label>
               <img src={OrderHistory} />
             </ButtonText>
         }
-        <Cart>
+        <Cart onClick={isAdmin ? () => navigate("/history") : () => navigate("/order")}  >
           <img src={Receipt} />
           <Amount>
             <p>0</p>
           </Amount>
         </Cart>
-        <OrderButton>
+        <OrderButton onClick={isAdmin ? () => navigate("/history") : () => navigate("/order")}>
           <div>
             <img src={Receipt} />
           </div>

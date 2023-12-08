@@ -2,15 +2,18 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
-  grid-area: header;
+  /* grid-area: header; */
+  height: 11.4rem;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
+
+  padding: 5.6rem 2.8rem 0;
+  /* display: flex; */
 
   > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5.6rem 2.8rem 0;
   }
   &[data-is-admin="true"] {
       > div {
@@ -19,9 +22,13 @@ export const Container = styled.div`
     }
 
     @media (min-width: ${BREAKPOINTS.MD}) {
+
+      padding: 2.8rem 0rem 0;
+
+
       > div {
         width: 72rem;
-        margin: 2.9rem auto 0;
+        margin: 0 auto;
         justify-content: stretch;
         gap: 2.8rem;
       }
@@ -30,7 +37,7 @@ export const Container = styled.div`
     @media (min-width: ${BREAKPOINTS.LG}) {
       > div {
         width: 93rem;
-        margin: 2.9rem auto 0;
+        /* margin: 2.9rem auto 0; */
         justify-content: stretch;
         gap: 2.2rem;
       }
@@ -39,7 +46,7 @@ export const Container = styled.div`
     @media (min-width: ${BREAKPOINTS.XLG}) {
       > div {
         width: 115rem;
-        margin: 2.9rem auto 0;
+        /* margin: 2.9rem auto 0; */
         justify-content: stretch;
         gap: 2.6rem;
       }
@@ -48,7 +55,7 @@ export const Container = styled.div`
     @media (min-width: ${BREAKPOINTS.XXLG}) {
       > div {
         width: 147rem;
-        margin: 2.9rem auto 0;
+        /* margin: 2.9rem auto 0; */
         justify-content: stretch;
         gap: 3.6rem;
       }
@@ -59,6 +66,8 @@ export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: .8rem;
+
+  cursor: pointer;
 
   span {
     font-family: var(--font-roboto);

@@ -6,12 +6,15 @@ import Image from "../../assets/Salad.png";
 import Minus from "../../assets/icons/Minus.svg";
 import Plus from "../../assets/icons/Plus.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-// quantity = String(quantity).padStart(2, "0")
+
 export function Dish() {
   let [quantity, setQuantity] = useState("01");
   const isAdmin = false;
   // const isFavorite = false;
+  const navigate = useNavigate();
+
 
   function Add() {
     if (quantity >= 1) {
@@ -37,7 +40,7 @@ export function Dish() {
       </div>
       <Wrapper>
         <DishPhoto $imagePath={Image} />
-        <div>
+        <div onClick={() => navigate("/details")}>
           <h4>Salada Ravanello</h4>
           <h3>&gt;</h3>
         </div>

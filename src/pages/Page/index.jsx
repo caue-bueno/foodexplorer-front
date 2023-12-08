@@ -1,17 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
-import { Menu } from "../../components/Menu";
-import { Details } from "../Details";
-import { EditDish } from "../EditDish";
-import { Favorites } from "../Favorites";
-import { History } from "../History";
-import { Home } from "../Home";
-import { NewDish } from "../NewDish";
-import { Order } from "../Order";
+import { MobileMenu } from "../../components/MobileMenu";
 import { Container, Content } from "./styles";
 import { useState } from "react";
-
+import { AppRoutes } from "../../routes/app.routes";
 
 
 export function Page() {
@@ -21,10 +14,10 @@ export function Page() {
     <Container>
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
-        <Home/>
+        <AppRoutes />
       </Content>
       <Footer />
-      <Menu 
+      <MobileMenu
         menuIsOpen={menuIsOpen}
         onCloseMenu={() => setMenuIsOpen(false)}
       />

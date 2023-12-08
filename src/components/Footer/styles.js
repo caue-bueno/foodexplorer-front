@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Container = styled.div`
-  grid-area: footer;
-
+  /* grid-area: footer; */
   height: 7.7rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
   

@@ -14,8 +14,8 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home /> } />
-      <Route path='/details/:id' element={<Details /> } />
-      <Route path='/editdish/:id' element={<EditDish /> } />
+      <Route path='/details' element={<Details /> } />
+      <Route path='/editdish' element={<EditDish /> } />
       <Route path='/newdish' element={<NewDish /> } />
       <Route path='/favorites' element={<Favorites /> } />
       <Route path='/history' element={<History /> } />

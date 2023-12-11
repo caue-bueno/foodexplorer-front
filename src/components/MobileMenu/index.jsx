@@ -6,8 +6,10 @@ import { Container, Header, Button, Content, Wrapper } from "./styles";
 import { GoSearch } from "react-icons/go";
 import Close from "../../assets/icons/Close.svg";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/auth";
 
 export function MobileMenu({ menuIsOpen, onCloseMenu }) {
+  const { signOut } = useAuth();
   const navigate = useNavigate();
 
   function onNewDish() {
@@ -18,6 +20,11 @@ export function MobileMenu({ menuIsOpen, onCloseMenu }) {
   function onFavorites() {
     navigate("favorites")
     onCloseMenu();
+  }
+
+  function onExit() {
+    navigate("/");
+    signOut();
   }
 
   return (
@@ -35,7 +42,7 @@ export function MobileMenu({ menuIsOpen, onCloseMenu }) {
         <Wrapper>
           <MenuButton title={"Novo prato"} onClick={onNewDish} />
           <MenuButton title={"Meus favoritos"} onClick={onFavorites}/>
-          <MenuButton title={"Sair"} />
+          <MenuButton title={"Sair"} onClick={onExit} />
         </Wrapper>
       </Content>
     </Container>

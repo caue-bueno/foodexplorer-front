@@ -10,13 +10,13 @@ import ForkKnife from "../../assets/icons/ForkKnife.svg";
 import { SearchInput } from "../SearchInput";
 import { GoSearch } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/auth";
 
 
 export function Header({ onOpenMenu }) {
-
+  const { signOut } = useAuth();
   const isAdmin = true;
   const navigate = useNavigate();
-
 
   return (
     <Container data-is-admin={isAdmin}>
@@ -62,7 +62,7 @@ export function Header({ onOpenMenu }) {
           </div>
           <p>Pedidos (0)</p>
         </OrderButton>
-        <SignOutButton>
+        <SignOutButton onClick={signOut}>
           <img src={SignOut} />
         </SignOutButton>
       </div>

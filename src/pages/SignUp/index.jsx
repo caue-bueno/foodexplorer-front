@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 import { Button } from "../../components/Button"
 import { Input } from "../../components/Input"
 import { Form } from "../../components/LoginForm"
 import { Logo } from "../../components/Logo"
+import { api } from "../../services/api"
 import { Container } from "./styles"
-import { Link, useNavigate } from "react-router-dom"
-import { api } from "../../services/api";
 
 
 export function SignUp() {

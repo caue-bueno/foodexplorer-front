@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useState } from "react";
 import { api } from "../services/api";
 
@@ -11,14 +11,12 @@ function AuthProvider({ children }) {
 
   async function signIn({ email, password }) {
     try {
-      const response = await api.post("/sessions", { email, password });
-      const { user, token } = response.data;
+      const response = await api.post("/sessions", { email, password }, {withCredentials: true });
+      const { user } = response.data;
 
       localStorage.setItem("@foodexplorer:user", JSON.stringify(user));
-      localStorage.setItem("@foodexplorer:token", token);
-      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
-      setData({ user, token });
+      setData({ user });
 
     } catch (error) {
       if (error.response) {
@@ -30,27 +28,22 @@ function AuthProvider({ children }) {
   }
 
   function signOut() {
-    localStorage.removeItem("@rocketmovies:token");
-    localStorage.removeItem("@rocketmovies:user");
+    localStorage.removeItem("@foodexplorer:user");
 
     setData({});
   }
 
   useEffect(() => {
-    const token = localStorage.getItem("@rocketmovies:token");
-    const user = localStorage.getItem("@rocketmovies:user");
+    const user = localStorage.getItem("@foodexplorer:user");
 
-    if (token && user) {
-      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    if (user) {
 
       setData({
-        token,
-        // user: JSON.parse(user)
+        user: JSON.parse(user)
       })
     }
-
   }, [])
-
+  
   return (
     <AuthContext.Provider value={{ signIn, signOut, user: data.user }}>
       {children}

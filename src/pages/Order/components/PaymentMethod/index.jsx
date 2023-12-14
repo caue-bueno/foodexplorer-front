@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import { Container, Form, PaymentButton } from "./styles";
-import Pix from "../../assets/icons/Pix.svg";
-import CreditCard from "../../assets/icons/CreditCard.svg";
-import QrCode from "../../assets/icons/QrCode.svg";
 import { useEffect } from "react";
-import { Button } from "../Button"
+import { Button } from "../../../../components/Button";
+import CreditCard from "../../../../assets/icons/CreditCard.svg";
+import Pix from "../../../../assets/icons/Pix.svg";
+import QrCode from "../../../../assets/icons/QrCode.svg";
+import { Container, Form, PaymentButton } from "./styles";
 import { PaymentStatus } from "../PaymentStatus";
 
 export function PaymentMethod() {
@@ -69,7 +69,7 @@ export function PaymentMethod() {
           </div>
             <Button title={"Finalizar pagamento"} $primary />
         </Form>
-        {/* <PaymentStatus /> */}
+        <PaymentStatus />
       </div>
     </Container>
   )

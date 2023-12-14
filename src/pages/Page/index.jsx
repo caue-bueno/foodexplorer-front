@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
-import { MobileMenu } from "../../components/MobileMenu";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { MobileMenu } from "./components/MobileMenu";
 import { Container, Content } from "./styles";
 import { useState } from "react";
 import { AppRoutes } from "../../routes/app.routes";

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BREAKPOINTS } from "../../styles/breakpoints";
+import { BREAKPOINTS } from "../../../../styles/breakpoints";
 
 export const Container = styled.div`
   display: flex;
@@ -18,7 +18,8 @@ export const Box = styled.div`
   width: 37.6rem;
   width: 100%;
   height: 12rem;
-  background-image: url(${({ $imagePath }) => $imagePath});
+  background: rgb(9,30,38);
+  background: linear-gradient(180deg, rgba(9,30,38,1) 0%, rgba(0,19,28,1) 100%); 
   margin-left: auto;
   margin-top: auto;
   border-radius: .3rem;

@@ -1,7 +1,7 @@
-import { ButtonText, Container, DishPhoto, Item, PaymentBox, Wrapper } from "./styles";
 import Image from "../../assets/Salad.png";
 import { Button } from "../../components/Button";
-import { PaymentMethod } from "../../components/PaymentMethod";
+import { PaymentMethod } from "./components/PaymentMethod";
+import { ButtonText, Container, DishPhoto, Item, PaymentBox, Wrapper } from "./styles";
 
 export function Order() {
   return (

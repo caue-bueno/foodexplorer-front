@@ -1,7 +1,7 @@
 import { Container, Image } from "./styles";
-import Clock from "../../assets/icons/Clock.svg";
-import CheckCircle from "../../assets/icons/CheckCircle.svg";
-import Fork from "../../assets/icons/Fork.svg";
+import Clock from "../../../../assets/icons/Clock.svg";
+import CheckCircle from "../../../../assets/icons/CheckCircle.svg";
+import Fork from "../../../../assets/icons/Fork.svg";
 
 
 export function PaymentStatus() {

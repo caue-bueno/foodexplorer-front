@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { SearchInput } from "../SearchInput";
+import { SearchInput } from "../../../../components/SearchInput";
 import { MenuButton } from "../MenuButton";
 import { Container, Header, Button, Content, Wrapper } from "./styles";
 import { GoSearch } from "react-icons/go";
-import Close from "../../assets/icons/Close.svg";
+import Close from "../../../../assets/icons/Close.svg";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../hooks/auth";
+import { useAuth } from "../../../../hooks/auth";
 
 export function MobileMenu({ menuIsOpen, onCloseMenu }) {
   const { signOut } = useAuth();

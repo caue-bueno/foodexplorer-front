@@ -1,13 +1,13 @@
-import { ButtonNext, ButtonPrev, Container, Overlay, ShadowLeft, ShadowRight } from "./styles";
-import { Hero } from "../../components/Hero";
-import { Section } from "../../components/Section";
-import { Dish } from "../../components/Dish";
-import CaretLeft from "../../assets/icons/CaretLeft.svg";
-import CaretRight from "../../assets/icons/CaretRight.svg";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import CaretLeft from "../../assets/icons/CaretLeft.svg";
+import CaretRight from "../../assets/icons/CaretRight.svg";
+import { Section } from "./components/Section";
+import { Dish } from "./components/Dish";
+import { Hero } from "./components/Hero";
+import { ButtonNext, ButtonPrev, Container, Overlay, ShadowLeft, ShadowRight } from "./styles";
 
 export function Home() {
 

@@ -1,10 +1,10 @@
 import { AddButton, Container, DishPhoto, Icon, MinusButton, PlusButton, Wrapper } from "./styles";
-import pencil from "../../assets/icons/Pencil.svg";
+import pencil from "../../../../assets/icons/Pencil.svg";
 // import favorite from "../../assets/icons/Favorite.svg";
-import heart from "../../assets/icons/Heart.svg";
-import Image from "../../assets/Salad.png";
-import Minus from "../../assets/icons/Minus.svg";
-import Plus from "../../assets/icons/Plus.svg";
+import heart from "../../../../assets/icons/Heart.svg";
+import Image from "../../../../assets/Salad.png";
+import Minus from "../../../../assets/icons/Minus.svg";
+import Plus from "../../../../assets/icons/Plus.svg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 

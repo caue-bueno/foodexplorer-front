@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
 import { Container, Cart, Amount, MenuButton, LogoWrapper, OrderButton, SignOutButton, Search, ButtonText } from "./styles";
-import Logo from "../../assets/logos/logoHeader.svg";
-import Menu from "../../assets/icons/menu.svg";
-import Heart from "../../assets/icons/Heart.svg";
-import Receipt from "../../assets/icons/receipt.svg";
-import SignOut from "../../assets/icons/SignOut.svg";
-import OrderHistory from "../../assets/icons/History.svg";
-import ForkKnife from "../../assets/icons/ForkKnife.svg";
-import { SearchInput } from "../SearchInput";
+import Logo from "../../../../assets/logos/logoHeader.svg";
+import Menu from "../../../../assets/icons/menu.svg";
+import Heart from "../../../../assets/icons/Heart.svg";
+import Receipt from "../../../../assets/icons/receipt.svg";
+import SignOut from "../../../../assets/icons/SignOut.svg";
+import OrderHistory from "../../../../assets/icons/History.svg";
+import ForkKnife from "../../../../assets/icons/ForkKnife.svg";
+import { SearchInput } from "../../../../components/SearchInput";
 import { GoSearch } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../hooks/auth";
+import { useAuth } from "../../../../hooks/auth";
 
 
 export function Header({ onOpenMenu }) {

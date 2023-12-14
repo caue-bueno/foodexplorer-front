@@ -11,12 +11,16 @@ export function Routes() {
   const { user, signOut } = useAuth();
 
   useEffect(() => {
-    api.get('/users/validated').catch(() => signOut())
+    api.get('/users/validated').catch((error) => {
+      if (error.response?.status === 401) {
+        signOut();
+      }
+    })
   }, []);
 
   return (
     <BrowserRouter>
-     { user ? <Page /> : <AuthRoutes />} 
+      {user ? <Page /> : <AuthRoutes />}
     </BrowserRouter>
   )
 }

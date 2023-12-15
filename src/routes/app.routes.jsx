@@ -13,13 +13,15 @@ import { Home } from '../pages/Home';
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home /> } />
+      <Route path='/' element={<Home /> } />
       <Route path='/details' element={<Details /> } />
       <Route path='/editdish' element={<EditDish /> } />
       <Route path='/newdish' element={<NewDish /> } />
       <Route path='/favorites' element={<Favorites /> } />
       <Route path='/history' element={<History /> } />
       <Route path='/order' element={<Order /> } />
+
+      {/* <Route path='*' exact={true} element={<NotFound /> } /> */}
     </Routes>
   )
 }

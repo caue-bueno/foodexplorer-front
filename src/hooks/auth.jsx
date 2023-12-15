@@ -4,7 +4,6 @@ import { api } from "../services/api";
 
 const AuthContext = createContext({});
 
-
 // eslint-disable-next-line react/prop-types
 function AuthProvider({ children }) {
   const [data, setData] = useState({});

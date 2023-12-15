@@ -7,9 +7,11 @@ import Minus from "../../assets/icons/Minus.svg";
 import Plus from "../../assets/icons/Plus.svg";
 import Image from "../../assets/Salad.png";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/auth";
 
 export function Details() {
-  const isAdmin = true;
+  const { user } = useAuth();
+  const isAdmin = user.role === "admin";
   const navigate = useNavigate();
 
   return (

@@ -69,7 +69,7 @@ export function PaymentMethod() {
           </div>
             <Button title={"Finalizar pagamento"} $primary />
         </Form>
-        <PaymentStatus />
+        {/* <PaymentStatus /> */}
       </div>
     </Container>
   )

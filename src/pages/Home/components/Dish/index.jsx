@@ -7,11 +7,13 @@ import Minus from "../../../../assets/icons/Minus.svg";
 import Plus from "../../../../assets/icons/Plus.svg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../../../hooks/auth";
 
 
 export function Dish() {
   let [quantity, setQuantity] = useState("01");
-  const isAdmin = false;
+  const { user } = useAuth();
+  const isAdmin = user.role === "admin";
   // const isFavorite = false;
   const navigate = useNavigate();
 

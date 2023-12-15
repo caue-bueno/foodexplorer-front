@@ -14,8 +14,8 @@ import { useAuth } from "../../../../hooks/auth";
 
 
 export function Header({ onOpenMenu }) {
-  const { signOut } = useAuth();
-  const isAdmin = true;
+  const { signOut, user } = useAuth();
+  const isAdmin = user.role === "admin";
   const navigate = useNavigate();
 
   return (

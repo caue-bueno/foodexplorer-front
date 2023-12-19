@@ -6,7 +6,7 @@ export const Container = styled.form`
   width: 25.6rem;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 2.4rem;
   border-radius: 1.6rem;
 
   > a {

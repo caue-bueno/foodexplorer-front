@@ -57,6 +57,9 @@ export function SignUp() {
             placeholder="No mínimo 6 caracteres"
             type="password"
             onChange={ e => setPassword(e.target.value)}
+            errorMessage={"Senha requer no mínimo 6 caracteres"}
+            required
+            pattern="^.{6,}$"
           />
           <Button title="Criar conta" $primary onClick={handleSignUp} />
 

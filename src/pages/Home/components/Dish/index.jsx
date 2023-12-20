@@ -36,7 +36,7 @@ export function Dish() {
     <Container>
       <div>
         {
-          isAdmin ? <Icon $imagePath={pencil} /> :
+          isAdmin ? <Icon $imagePath={pencil} onClick={() => navigate("/editdish")}/> :
              <Icon $imagePath={heart} />
         }
       </div>

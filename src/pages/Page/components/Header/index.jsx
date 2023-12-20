@@ -18,6 +18,11 @@ export function Header({ onOpenMenu }) {
   const isAdmin = user.role === "admin";
   const navigate = useNavigate();
 
+  function handleSignOut() {
+    signOut();
+    navigate("/");
+  }
+
   return (
     <Container data-is-admin={isAdmin}>
       <div>
@@ -62,7 +67,7 @@ export function Header({ onOpenMenu }) {
           </div>
           <p>Pedidos (0)</p>
         </OrderButton>
-        <SignOutButton onClick={signOut}>
+        <SignOutButton onClick={handleSignOut}>
           <img src={SignOut} />
         </SignOutButton>
       </div>

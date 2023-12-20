@@ -5,11 +5,11 @@ export const Container = styled.div`
   padding-left: 8px;
 
   @media (min-width: ${BREAKPOINTS.LG}){
-    padding: 0 12.4rem;
+    padding: 0 6.4rem;
   }
 
   @media (min-width: ${BREAKPOINTS.XLG}) {
-    padding: 2rem 12.4rem 0 ;
+    padding: 2rem 10.4rem 0 ;
   }
 
   .mySwiper{

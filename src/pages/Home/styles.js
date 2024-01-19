@@ -15,7 +15,6 @@ export const Container = styled.div`
   .mySwiper{
     position: relative;
     border-radius: 0.5rem;
-
   }
 
   .swiper-slide {
